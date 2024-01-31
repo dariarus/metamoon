@@ -2,6 +2,7 @@ import React, {FunctionComponent} from 'react';
 
 import headerStyles from './header.module.css';
 import logo from '../../images/logo.png';
+import {Button} from '../button/button';
 
 export const Header: FunctionComponent = () => {
   return (
@@ -12,7 +13,7 @@ export const Header: FunctionComponent = () => {
         <a href="#" className={headerStyles.navigation__link}>Roadmap</a>
         <a href="#" className={headerStyles.navigation__link}>Team</a>
         <a href="#" className={headerStyles.navigation__link}>Community</a>
-      {/*  <button> */}
+        <Button name="Connect wallet" isWithBackground={false}/>
       </nav>
     </header>
   )
