@@ -1,0 +1,38 @@
+.app {
+
+}
+
+.app__background-main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)),
+  linear-gradient(rgba(250, 0, 255, 1), rgba(112, 0, 255, 1) 77%);
+  overflow: hidden;
+}
+
+.app__background-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#000 50%, #09006d);
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+
+.app__background-circle {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  width: 1709px;
+  height: 1726px;
+  background: url(../../images/rocket.png) 23% 15% no-repeat,
+  radial-gradient(45% 40% at 55% 30%, rgba(255, 255, 255, 1), rgba(217, 217, 217, 0));
+  border-radius: 50%;
+}
+
+.main {
+  position: relative;
+  z-index: 4;
+}
