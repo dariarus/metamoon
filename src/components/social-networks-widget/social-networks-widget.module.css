@@ -4,26 +4,30 @@
   bottom: 2%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
-  padding: 5px 41px;
-  min-width: 400px;
-  max-height: 50px;
+  padding: 5px 2em;
+  min-width: 27.8vw;
   background-color: rgba(215, 183, 255, 0.7);
   border-radius: 20px;
   transform: translateX(-50%);
 }
 
 .link {
+  /* убрать лишнее пространство у тега <a> */
+  display: inline-block;
+  line-height: 0;
+  /**/
   text-decoration: none;
   margin: 0;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 10%;
+  height: 10%;
 }
 
 .image {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }

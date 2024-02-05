@@ -10,16 +10,20 @@ const App: FunctionComponent = () => {
   return (
     // TODO: при настройке роутинга проверять страницу, и на главной делать один фон, на остальных - другой
     <div className={appStyles.app}>
-      <Header/>
+      <div className={appStyles.app__content}>
+        <Header/>
 
-      {/*TODO: при настройке роутинга проверять страницу и удалить фон, если не главная*/}
-      <div className={appStyles['app__background-bottom']}/>
-      <div className={appStyles['app__background-circle']}/>
+        {/*TODO: при настройке роутинга проверять страницу и удалить фон, если не главная*/}
+        <div className={appStyles['app__background-bottom']}>
+          <div className={appStyles['app__background-circle']}/>
+        </div>
 
-      <main className={appStyles.main}>
-        <MainPage/>
-      </main>
-      <SocialNetworksWidget/>
+
+        <main className={appStyles.main}>
+          <MainPage/>
+        </main>
+        <SocialNetworksWidget/>
+      </div>
     </div>
   )
 }

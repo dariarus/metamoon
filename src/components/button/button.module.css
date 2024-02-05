@@ -1,6 +1,6 @@
 .button {
 
-  padding: 15px 20px;
+  padding: .8em 1.1em;
   
   background-color: #d7b7ff;
   /*background-image: linear-gradient(var(--button-background-color), var(--button-background-color));*/
@@ -20,15 +20,15 @@
   /*background-image: -webkit-linear-gradient(to right top, #d7b7ff, #fff);*/
 }
 
-.button_background_image {
+.button_background_with-image {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.3em;
   line-height: 140%;
 }
 
 .button_background_common {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8vh;
   line-height: 1.2em;
   text-transform: uppercase;
 }

@@ -12,14 +12,14 @@ export const SocialNetworksWidget: FunctionComponent = () => {
       <a href="#" className={widgetStyles.link}>
         <img src={instagramIcon} alt="instagram" className={widgetStyles.image}/>
       </a>
-      <a href="#">
-        <img src={telegramIcon} alt="telegram"/>
+      <a href="#" className={widgetStyles.link}>
+        <img src={telegramIcon} alt="telegram" className={widgetStyles.image}/>
       </a>
-      <a href="#">
-        <img src={linkedinIcon} alt="linkedin"/>
+      <a href="#" className={widgetStyles.link}>
+        <img src={linkedinIcon} alt="linkedin" className={widgetStyles.image}/>
       </a>
-      <a href="#">
-        <img src={facebookIcon} alt="facebook"/>
+      <a href="#" className={widgetStyles.link}>
+        <img src={facebookIcon} alt="facebook" className={widgetStyles.image}/>
       </a>
     </footer>
   )

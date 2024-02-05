@@ -2,12 +2,13 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 17px 35px 0 15px;
-  z-index: 1000;
+  z-index: 4;
 }
 
 .logo {
-  width: 92px;
+  width: 6em;
   object-fit: cover;
   object-position: center;
 }
@@ -16,7 +17,6 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  padding-top: 15px;
   height: min-content;
 }
 
@@ -24,7 +24,7 @@
   margin: 0;
   font-family: var(--font-family-main);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8vh;
   line-height: 1.2em;
   color: var(--color-white);
   text-transform: uppercase;

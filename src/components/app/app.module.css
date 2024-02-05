@@ -4,17 +4,14 @@
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)),
   linear-gradient(rgba(250, 0, 255, 1), rgba(112, 0, 255, 1) 77%);
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
-/*.app__background-main-page {*/
-/*  position: relative;*/
-/*  width: 100%;*/
-/*  height: 100vh;*/
-/*  background: linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)),*/
-/*  linear-gradient(rgba(250, 0, 255, 1), rgba(112, 0, 255, 1) 77%);*/
-/*  overflow: hidden;*/
-/*}*/
+.app__content {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
 
 .app__background-bottom {
   position: absolute;
@@ -26,36 +23,21 @@
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
 
-/*.app__background-main-page {*/
-/*  position: relative;*/
-/*  width: 100%;*/
-/*  height: 100vh;*/
-/*  background: linear-gradient(#000 50%, #09006d);*/
-/*  overflow: hidden;*/
-/*}*/
-
-/*.app__background-bottom {*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  right: 0;*/
-/*  width: 100%;*/
-/*  height: 100vh;*/
-/*  background: linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)),*/
-/*  linear-gradient(rgba(250, 0, 255, 1), rgba(112, 0, 255, 1) 77%);*/
-/*  clip-path: polygon(100% 0, 0 100%, 0 0);*/
-/*  */
-/*  !*z-index: -4;*!*/
-/*}*/
-
 .app__background-circle {
   position: fixed;
+  /*position: absolute;*/
+  /*bottom: -25%;*/
+  /*right: -40%;*/
   top: 25%;
   left: 40%;
-  width: 1709px;
-  height: 1726px;
+  /*width: 1709px;*/
+  /*height: 1726px;*/
+  width: 118.7vw;
+  height: 168.6vh;
   background: url(../../images/rocket.png) 23% 15% no-repeat,
   radial-gradient(45% 40% at 55% 30%, rgba(255, 255, 255, 1), rgba(217, 217, 217, 0));
   border-radius: 50%;
+  /*transform: translate(-40%, -25%);*/
   /*z-index: -4;*/
 }
 
