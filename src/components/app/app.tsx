@@ -6,6 +6,8 @@ import {Header} from '../header/header';
 import {MainPage} from '../../pages/main-page/main-page';
 import {SocialNetworksWidget} from '../social-networks-widget/social-networks-widget';
 
+// import rocket from '../../images/rocket.png';
+
 const App: FunctionComponent = () => {
   return (
     // TODO: при настройке роутинга проверять страницу, и на главной делать один фон, на остальных - другой
@@ -15,7 +17,11 @@ const App: FunctionComponent = () => {
 
         {/*TODO: при настройке роутинга проверять страницу и удалить фон, если не главная*/}
         <div className={appStyles['app__background-bottom']}>
-          <div className={appStyles['app__background-circle']}/>
+          <div className={appStyles['app__background-circle']}>
+            {/*<div className={appStyles.app__rocket}>*/}
+            {/*  <img src={rocket} style={{width: "100%"}}/>*/}
+            {/*</div>*/}
+          </div>
         </div>
 
 

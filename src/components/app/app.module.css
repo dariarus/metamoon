@@ -18,9 +18,10 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(#000 50%, #09006d);
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  overflow: hidden;
 }
 
 .app__background-circle {
@@ -30,18 +31,102 @@
   /*right: -40%;*/
   top: 25%;
   left: 40%;
-  /*width: 1709px;*/
-  /*height: 1726px;*/
-  width: 118.7vw;
-  height: 168.6vh;
-  background: url(../../images/rocket.png) 23% 15% no-repeat,
-  radial-gradient(45% 40% at 55% 30%, rgba(255, 255, 255, 1), rgba(217, 217, 217, 0));
+  width: 1709px;
+  height: 1726px;
+  /*width: 118.7vw;*/
+  /*height: 168.6vh;*/
+  background: radial-gradient(45% 40% at 55% 30%, rgba(255, 255, 255, 1), rgba(217, 217, 217, 0));
   border-radius: 50%;
   /*transform: translate(-40%, -25%);*/
   /*z-index: -4;*/
 }
 
+/*.app__background-circle::after {*/
+.app__background-bottom::after {
+  content: '';
+  position: absolute;
+  /*top: 10%;*/
+  /*left: 20%;*/
+  bottom: 5%;
+  left: 30%;
+  width: 180px;
+  /*width: 30vw;*/
+  height: 200px;
+  /*height: 40vh;*/
+  /*background: url(../../images/rocket.png) 23% 15% no-repeat;*/
+  background: url(../../images/rocket.png) center center / 80% no-repeat;
+  background-size: cover;
+  transform-origin: bottom right;
+  animation: rocketFlight 10s linear infinite;
+}
+
+/*.app__rocket {*/
+/*  width: 20%;*/
+/*  height: 30%;*/
+/*  animation: rocketFlight 5s ease-in-out;*/
+/*}*/
+
 .main {
   position: relative;
   z-index: 4;
 }
+
+/*@keyframes rocketFlight {*/
+/*  0% {*/
+/*    transform: translate(0, -20%);*/
+/*  }*/
+/*  10% {*/
+/*    transform: translate(20%, -10%);*/
+/*  }*/
+/*  80% {*/
+/*    transform: translate(20%, -10%) rotate(360deg);*/
+/*  }*/
+/*  81% {*/
+/*    transform: rotate(0deg) translate(20%, -10%);*/
+/*  }*/
+/*  100% {*/
+/*    transform: translate(500%, -150%);*/
+/*  }*/
+/*}*/
+
+@keyframes rocketFlight {
+  0% {
+    transform: scale(0) rotate(-30deg) translate(-100%, 250%) ;
+  }
+  10% {
+    transform: scale(20%) rotate(-50deg) translate(20%, -20%);
+  }
+  50% {
+    transform:  translate(100%, -60%);
+  }
+  80% {
+    transform: translate(100%, -60%) rotate(360deg);
+  }
+  81% {
+    transform: rotate(0) translate(100%, -60%);
+  }
+  100% {
+    transform: translate(800%, -150%) rotate(50deg);
+  }
+}
+
+/*@keyframes rocketScale {*/
+/*  0%, 100% {*/
+/*    transform: scale(0.1);*/
+/*  }*/
+/*  10%, 50%, 80% {*/
+/*    transform: scale(1);*/
+/*  }*/
+/*}*/
+
+/*@keyframes rocketFlight {*/
+/*  0% {*/
+/*    transform: translate(-100%, 200%) rotate(-80deg);*/
+/*  }*/
+/*  50% {*/
+/*    transform: translate(100%, -40%);*/
+/*  }*/
+/*  100% {*/
+/*    transform: translate(500%, -150%);*/
+/*  }*/
+/*}*/
