@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__info-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13.18vh;
+  width: 100%;
+  min-height: 21.6vh;
+}
+
+.image {
+  width: 182px;
+  height: 184px;
+  border-radius: 20px;
+  
+  background-color: #D9D9D9;
+}

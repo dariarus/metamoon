@@ -1,11 +1,12 @@
 .button {
-
+  box-sizing: border-box;
   padding: .8em 1.1em;
-  
   background-color: #d7b7ff;
   /*background-image: linear-gradient(var(--button-background-color), var(--button-background-color));*/
   /*background-image: none;*/
   /*background-image: -webkit-linear-gradient(#d7b7ff, #d7b7ff);*/
+  max-width: max-content;
+  height: min-content;
   font-family: var(--font-family-main);
   color: var(--color-black);
   border-radius: 10px;

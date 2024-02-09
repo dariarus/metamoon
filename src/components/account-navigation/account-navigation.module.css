@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+}
+
+.navigation__link-wrap {
+  display: flex;
+  width: max-content;
+  min-height: 28%;
+}
+
+.link {
+  align-self: flex-end;
+  font-family: var(--font-family-main);
+  font-weight: 500;
+  font-size: 3vh;
+  color: var(--color-white);
+}
+
+.link_active {
+  text-decoration: underline;
+}
+
+.navigation__status {
+  align-self: flex-start;
+  box-sizing: border-box;
+  padding: 5px 2em;
+  border-radius: 10px;
+  font-family: var(--font-family-main);
+  font-weight: 500;
+  font-size: 1.5vh;
+  color: var(--color-white);
+}
+
+.navigation__status_available {
+  border: 1px solid var(--color-status-active);
+}
+
+.navigation__status_pending {
+  border: 1px solid var(--color-status-pending);
+}
