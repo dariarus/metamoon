@@ -1,11 +1,8 @@
 .button {
-
   padding: .8em 1.1em;
-  
   background-color: #d7b7ff;
-  /*background-image: linear-gradient(var(--button-background-color), var(--button-background-color));*/
-  /*background-image: none;*/
-  /*background-image: -webkit-linear-gradient(#d7b7ff, #d7b7ff);*/
+  max-width: max-content;
+  height: min-content;
   font-family: var(--font-family-main);
   color: var(--color-black);
   border-radius: 10px;
@@ -15,9 +12,6 @@
 
 .button:hover {
   background-image: linear-gradient(to right top, var(--button-background-color), var(--color-white));
-  /*background-image: linear-gradient(to right top, #d7b7ff, #fff);*/
-  /*background-image: none;*/
-  /*background-image: -webkit-linear-gradient(to right top, #d7b7ff, #fff);*/
 }
 
 .button_background_with-image {
