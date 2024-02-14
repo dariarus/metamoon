@@ -32,13 +32,8 @@
 .replacing-image {
   position: absolute;
   top: 38%;
-  /*left: -4px;*/
   left: -2px;
   width: .75em;
-  /*transform: translateY(-50%);*/
-  /*object-fit: cover;*/
-  /*object-position: center;*/
-  /*height: 100%;*/
 }
 
 .content__buttons-wrap {

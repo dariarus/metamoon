@@ -9,6 +9,7 @@ import {Header} from '../header/header';
 import {SocialNetworksWidget} from '../social-networks-widget/social-networks-widget';
 import {UserFeatures} from '../../pages/UserFeatures/UserFeatures';
 import {AirdropProfile} from '../AirdropProfile/AirdropProfile';
+import {ScrollingText} from '../ScrollingText/ScrollingText';
 
 
 // import rocket from '../../images/rocket.png';
@@ -44,6 +45,7 @@ const App: FunctionComponent = () => {
         </main>
         <SocialNetworksWidget/>
       </div>
+      <ScrollingText/>
     </div>
   )
 }

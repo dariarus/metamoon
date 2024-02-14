@@ -1,10 +1,10 @@
 import React, {FunctionComponent} from 'react';
 
 import widgetStyles from './social-networks-widget.module.css';
-import instagramIcon from '../../images/instagram-icon.png';
-import telegramIcon from '../../images/telegram-icon.png';
-import linkedinIcon from '../../images/linkedin-icon.png';
-import facebookIcon from '../../images/facebook-icon.png';
+import instagramIcon from '../../images/instagram-icon.svg';
+import telegramIcon from '../../images/telegram-icon.svg';
+import linkedinIcon from '../../images/linkedin-icon.svg';
+import facebookIcon from '../../images/facebook-icon.svg';
 
 export const SocialNetworksWidget: FunctionComponent = () => {
   return (
