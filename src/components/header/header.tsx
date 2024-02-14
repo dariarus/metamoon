@@ -1,8 +1,8 @@
-import React, {FunctionComponent} from 'react';
+import React, { type FunctionComponent } from 'react'
 
-import headerStyles from './header.module.css';
-import logo from '../../images/logo.png';
-import {Button} from '../button/button';
+import headerStyles from './header.module.css'
+import logo from '../../images/logo.png'
+import { Button } from '../button/button'
 
 export const Header: FunctionComponent = () => {
   return (

@@ -1,9 +1,9 @@
-import React, {FunctionComponent} from 'react';
+import React, { type FunctionComponent } from 'react'
 
-import mainPageStyles from './main-page.module.css';
-import logo from '../../images/logo.png';
+import mainPageStyles from './main-page.module.css'
+import logo from '../../images/logo.png'
 
-import {Button} from '../../components/button/button';
+import { Button } from '../../components/button/button'
 
 export const MainPage: FunctionComponent = () => {
   return (
