@@ -1,6 +1,7 @@
 import React, { type FC } from 'react'
 
-import widgetStyles from './social-networks-widget.module.css'
+import styles from './social-networks-widget.module.css'
+
 import instagramIcon from '../../images/instagram-icon.png'
 import telegramIcon from '../../images/telegram-icon.png'
 import linkedinIcon from '../../images/linkedin-icon.png'
@@ -8,18 +9,18 @@ import facebookIcon from '../../images/facebook-icon.png'
 
 export const SocialNetworksWidget: FC = () => {
   return (
-    <footer className={widgetStyles.widget}>
-      <a href="#" className={widgetStyles.link}>
-        <img src={instagramIcon} alt="instagram" className={widgetStyles.image}/>
+    <footer className={styles.widget}>
+      <a href="#" className={styles.link}>
+        <img src={instagramIcon} alt="instagram" className={styles.image}/>
       </a>
-      <a href="#" className={widgetStyles.link}>
-        <img src={telegramIcon} alt="telegram" className={widgetStyles.image}/>
+      <a href="#" className={styles.link}>
+        <img src={telegramIcon} alt="telegram" className={styles.image}/>
       </a>
-      <a href="#" className={widgetStyles.link}>
-        <img src={linkedinIcon} alt="linkedin" className={widgetStyles.image}/>
+      <a href="#" className={styles.link}>
+        <img src={linkedinIcon} alt="linkedin" className={styles.image}/>
       </a>
-      <a href="#" className={widgetStyles.link}>
-        <img src={facebookIcon} alt="facebook" className={widgetStyles.image}/>
+      <a href="#" className={styles.link}>
+        <img src={facebookIcon} alt="facebook" className={styles.image}/>
       </a>
     </footer>
   )

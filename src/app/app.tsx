@@ -1,6 +1,6 @@
 import React, { type FC } from 'react'
 
-import appStyles from './app.module.css'
+import styles from './app.module.css'
 
 import { Header } from '../components/header/header'
 import { MainPage } from '../pages/main-page/main-page'
@@ -9,20 +9,20 @@ import { SocialNetworksWidget } from '../components/social-networks-widget/socia
 const App: FC = () => {
   return (
     // TODO: при настройке роутинга проверять страницу, и на главной делать один фон, на остальных - другой
-    <div className={appStyles.app}>
-      <div className={appStyles.app__content}>
+    <div className={styles.app}>
+      <div className={styles.app__content}>
         <Header/>
 
         {/* TODO: при настройке роутинга проверять страницу и удалить фон, если не главная */}
-        <div className={appStyles['app__background-bottom']}>
-          <div className={appStyles['app__background-circle']}>
-            {/* <div className={appStyles.app__rocket}> */}
+        <div className={styles['app__background-bottom']}>
+          <div className={styles['app__background-circle']}>
+            {/* <div className={styles.app__rocket}> */}
             {/*  <img src={rocket} style={{width: "100%"}}/> */}
             {/* </div> */}
           </div>
         </div>
 
-        <main className={appStyles.main}>
+        <main className={styles.main}>
           <MainPage/>
         </main>
         <SocialNetworksWidget/>

@@ -1,6 +1,6 @@
 import React, { type FC } from 'react'
 
-import buttonStyles from './button.module.css'
+import styles from './button.module.css'
 
 type Props = {
   name: string
@@ -10,8 +10,8 @@ type Props = {
 export const Button: FC<Props> = (props) => {
   return (
     <button className={props.isWithBackground
-      ? `${buttonStyles.button} ${buttonStyles['button_background_with-image']}`
-      : `${buttonStyles.button} ${buttonStyles.button_background_common}`}>
+      ? `${styles.button} ${styles['button_background_with-image']}`
+      : `${styles.button} ${styles.button_background_common}`}>
       {props.name}
     </button>
   )
