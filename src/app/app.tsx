@@ -6,8 +6,6 @@ import { Header } from '../components/header/header'
 import { MainPage } from '../pages/main-page/main-page'
 import { SocialNetworksWidget } from '../components/social-networks-widget/social-networks-widget'
 
-// import rocket from '../../images/rocket.png';
-
 const App: FC = () => {
   return (
     // TODO: при настройке роутинга проверять страницу, и на главной делать один фон, на остальных - другой
