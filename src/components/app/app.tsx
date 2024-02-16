@@ -1,4 +1,4 @@
-import React, { type FunctionComponent } from 'react'
+import React, { type FC } from 'react'
 
 import appStyles from './app.module.css'
 
@@ -8,7 +8,7 @@ import { SocialNetworksWidget } from '../social-networks-widget/social-networks-
 
 // import rocket from '../../images/rocket.png';
 
-const App: FunctionComponent = () => {
+const App: FC = () => {
   return (
     // TODO: при настройке роутинга проверять страницу, и на главной делать один фон, на остальных - другой
     <div className={appStyles.app}>

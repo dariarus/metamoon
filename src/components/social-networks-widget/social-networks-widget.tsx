@@ -1,4 +1,4 @@
-import React, { type FunctionComponent } from 'react'
+import React, { type FC } from 'react'
 
 import widgetStyles from './social-networks-widget.module.css'
 import instagramIcon from '../../images/instagram-icon.png'
@@ -6,7 +6,7 @@ import telegramIcon from '../../images/telegram-icon.png'
 import linkedinIcon from '../../images/linkedin-icon.png'
 import facebookIcon from '../../images/facebook-icon.png'
 
-export const SocialNetworksWidget: FunctionComponent = () => {
+export const SocialNetworksWidget: FC = () => {
   return (
     <footer className={widgetStyles.widget}>
       <a href="#" className={widgetStyles.link}>

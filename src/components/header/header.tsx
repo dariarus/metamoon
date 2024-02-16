@@ -1,10 +1,10 @@
-import React, { type FunctionComponent } from 'react'
+import React, { type FC } from 'react'
 
 import headerStyles from './header.module.css'
 import logo from '../../images/logo.png'
 import { Button } from '../button/button'
 
-export const Header: FunctionComponent = () => {
+export const Header: FC = () => {
   return (
     <header className={headerStyles.header}>
       <img src={logo} alt="Logo" className={headerStyles.logo}/>

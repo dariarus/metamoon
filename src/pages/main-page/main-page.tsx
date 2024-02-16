@@ -1,11 +1,11 @@
-import React, { type FunctionComponent } from 'react'
+import React, { type FC } from 'react'
 
 import mainPageStyles from './main-page.module.css'
 import logo from '../../images/logo.png'
 
 import { Button } from '../../components/button/button'
 
-export const MainPage: FunctionComponent = () => {
+export const MainPage: FC = () => {
   return (
     <div className={mainPageStyles.content}>
       <h1 className={`${mainPageStyles.text} ${mainPageStyles.text_header}`}>To the<br/>M<span
