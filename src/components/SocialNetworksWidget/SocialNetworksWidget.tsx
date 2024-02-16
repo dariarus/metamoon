@@ -1,6 +1,6 @@
 import React, { type FC } from 'react'
 
-import styles from './social-networks-widget.module.css'
+import styles from './SocialNetworksWidget.module.css'
 
 import instagramIcon from '../../images/instagram-icon.png'
 import telegramIcon from '../../images/telegram-icon.png'

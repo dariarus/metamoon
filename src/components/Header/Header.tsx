@@ -1,9 +1,9 @@
 import React, { type FC } from 'react'
 
-import styles from './header.module.css'
+import styles from './Header.module.css'
 import logo from '../../images/logo.png'
 
-import { Button } from '../button/button'
+import { Button } from '../Button/Button'
 
 export const Header: FC = () => {
   return (

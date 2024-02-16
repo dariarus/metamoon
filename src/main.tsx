@@ -5,7 +5,7 @@ import './style.css'
 import './fonts/fonts.css'
 import './vendor/normalize.css'
 
-import App from './app/app'
+import App from './App/App'
 
 const appElement = document.getElementById('app')
 

@@ -1,9 +1,9 @@
 import React, { type FC } from 'react'
 
-import styles from './main-page.module.css'
+import styles from './MainPage.module.css'
 import logo from '../../images/logo.png'
 
-import { Button } from '../../components/button/button'
+import { Button } from '../../components/Button/Button'
 
 export const MainPage: FC = () => {
   return (
