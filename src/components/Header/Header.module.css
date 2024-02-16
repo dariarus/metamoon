@@ -38,5 +38,5 @@
 
 .navigation__link:active,
 .navigation__link:focus {
-  color: #ffa300;
+  color: var(--color-header-link-active);
 }

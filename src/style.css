@@ -10,12 +10,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  
-  --font-family-main: 'Montserrat', 'Arial', sans-serif;
-  
-  --color-white: #fff;
-  --color-black: #000;
-  --button-background-color: #d7b7ff;
 }
 
 body {

@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './style.css'
+import './constants.css'
 import './fonts/fonts.css'
 import './vendor/normalize.css'
 

@@ -1,0 +1,14 @@
+:root {
+  --font-family-main: 'Montserrat', 'Arial', sans-serif;
+  
+  --color-white: #fff;
+  --color-black: #000;
+  --color-black-transparent: #00000000;
+  --color-blue: #09006d;
+  --color-pink: #fa00ff;
+  --color-pirple: #7000ff;
+  --color-gradient-dark: #d9d9d900;
+  --color-header-link-active: #ffa300;
+  --button-background-color: #d7b7ff;
+  --button-background-color-deaper: #d7b7ffb2;
+}

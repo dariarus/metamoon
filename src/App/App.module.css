@@ -2,8 +2,8 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)),
-  linear-gradient(rgba(250, 0, 255, 1), rgba(112, 0, 255, 1) 77%);
+  background: linear-gradient(var(--color-black) 5%, var(--color-black-transparent)),
+  linear-gradient(var(--color-pink), var(--color-pirple) 77%);
 }
 
 .app__content {
@@ -19,7 +19,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#000 50%, #09006d);
+  background: linear-gradient(var(--color-black) 50%, var(--color-blue));
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
   overflow: hidden;
 }
@@ -30,7 +30,7 @@
   left: 40%;
   width: 1709px;
   height: 1726px;
-  background: radial-gradient(45% 40% at 55% 30%, rgba(255, 255, 255, 1), rgba(217, 217, 217, 0));
+  background: radial-gradient(45% 40% at 55% 30%, var(--color-white), var(--color-gradient-dark));
   border-radius: 50%;
 }
 
