@@ -2,9 +2,9 @@ import React, { type FC } from 'react'
 
 import appStyles from './app.module.css'
 
-import { Header } from '../header/header'
-import { MainPage } from '../../pages/main-page/main-page'
-import { SocialNetworksWidget } from '../social-networks-widget/social-networks-widget'
+import { Header } from '../components/header/header'
+import { MainPage } from '../pages/main-page/main-page'
+import { SocialNetworksWidget } from '../components/social-networks-widget/social-networks-widget'
 
 // import rocket from '../../images/rocket.png';
 
