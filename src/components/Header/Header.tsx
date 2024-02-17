@@ -8,7 +8,9 @@ import { Button } from '../Button/Button'
 export const Header: FC = () => {
   return (
     <header className={styles.header}>
-      <img src={logo} alt="Logo" className={styles.logo}/>
+      <a href="/" target="_blank" rel="noreferrer" className={styles['header__logo-image-link']}>
+        <img src={logo} alt="Logo" className={styles.logo}/>
+      </a>
       <nav className={styles.navigation}>
         <a href="#" className={styles.navigation__link}>About us</a>
         <a href="#" className={styles.navigation__link}>Roadmap</a>

@@ -7,6 +7,12 @@
   z-index: 4;
 }
 
+.header__logo-image-link {
+  display: inline-block;
+  line-height: 0;
+  text-decoration: none;
+}
+
 .logo {
   width: 6em;
   object-fit: cover;
