@@ -1,9 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   box-sizing: border-box;
-  /*font-size: 9.7vh;*/
   line-height: 1.5;
-  font-weight: 400;
   
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,6 +13,11 @@
 body {
   margin: 0;
   min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  color: var(--color-white);
 }
 
 #app {

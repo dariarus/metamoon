@@ -3,7 +3,6 @@
   background-color: #d7b7ff;
   max-width: max-content;
   height: min-content;
-  font-family: var(--font-family-main);
   color: var(--color-black);
   border-radius: 10px;
   cursor: pointer;

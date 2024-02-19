@@ -8,14 +8,14 @@ import { Button } from '../../components/Button/Button'
 export const MainPage: FC = () => {
   return (
     <div className={styles.content}>
-      <h1 className={`${styles.text} ${styles.text_header}`}>To the<br/>M<span
+      <h1 className={styles.heading}>To the<br/>M<span
         className={styles['replaced-letter']}>e
         <img src={logo} alt="e"
              className={styles['replacing-image']}/>
       </span>taMoon
       </h1>
-      <h4 className={`${styles.text} ${styles.text_subheader}`}>From the creators of the first Cardano
-        NFT-marketplace</h4>
+      <p className={styles.subheading}>From the creators of the first Cardano
+        NFT-marketplace</p>
       <div className={styles['content__buttons-wrap']}>
         <Button title="Connect wallet"/>
         <Button title="Get whitelisted for airdrop"/>

@@ -28,7 +28,6 @@
 
 .navigation__link {
   margin: 0;
-  font-family: var(--font-family-main);
   font-weight: 500;
   font-size: 1.8vh;
   line-height: 1.2em;

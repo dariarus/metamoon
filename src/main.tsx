@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import 'reset-css'
 
 import './style.css'
 import './constants.css'
 import './fonts/fonts.css'
-import './vendor/normalize.css'
 
 import App from './App/App'
 
