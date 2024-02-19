@@ -4,19 +4,19 @@ import * as classNames from 'classnames'
 import styles from './Button.module.css'
 
 interface Props {
-  name: string
-  isWithBackground: boolean
+  title: string
+  isBackgroundImage?: boolean
 }
 
 export const Button: FC<Props> = (props) => {
   const buttonStyles = classNames(styles.button as string, {
-    [styles['button_background_with-image']]: props.isWithBackground,
-    [styles.button_background_common]: !props.isWithBackground
+    [styles['button_background_with-image']]: props.isBackgroundImage,
+    [styles.button_background_common]: !props.isBackgroundImage
   })
 
   return (
     <button className={buttonStyles}>
-      {props.name}
+      {props.title}
     </button>
   )
 }

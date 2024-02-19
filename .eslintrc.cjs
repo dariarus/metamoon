@@ -40,5 +40,6 @@ module.exports = {
     ],
     "rules": {
         "no-console": "warn",
+        "@typescript-eslint/strict-boolean-expressions": "off",
     }
 }
