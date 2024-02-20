@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const Button: FC<Props> = (props) => {
-  const buttonStyles = classNames(styles.button as string, {
+  const buttonStyles = classNames(styles.button, {
     [styles['button_background_with-image']]: props.isBackgroundImage,
     [styles.button_background_common]: !props.isBackgroundImage
   })
