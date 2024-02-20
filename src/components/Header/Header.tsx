@@ -4,18 +4,19 @@ import styles from './Header.module.css'
 import logo from '../../images/logo.png'
 
 import { Button } from '../Button/Button'
+import { Link } from '../Link/Link'
 
 export const Header: FC = () => {
   return (
     <header className={styles.header}>
-      <a href="/" target="_blank" rel="noreferrer" className={styles['header__logo-image-link']}>
+      <Link href="/" styles={styles['header__logo-image-link']}>
         <img src={logo} alt="Logo" className={styles.logo}/>
-      </a>
+      </Link>
       <nav className={styles.navigation}>
-        <a href="/example/change-me" target="_blank" rel="noreferrer" className={styles.navigation__link}>About us</a>
-        <a href="/example/change-me" target="_blank" rel="noreferrer" className={styles.navigation__link}>Roadmap</a>
-        <a href="/example/change-me" target="_blank" rel="noreferrer" className={styles.navigation__link}>Team</a>
-        <a href="/example/change-me" target="_blank" rel="noreferrer" className={styles.navigation__link}>Community</a>
+        <Link href="/example/change-me" styles={styles.navigation__link}>About us</Link>
+        <Link href="/example/change-me" styles={styles.navigation__link}>Roadmap</Link>
+        <Link href="/example/change-me" styles={styles.navigation__link}>Team</Link>
+        <Link href="/example/change-me" styles={styles.navigation__link}>Community</Link>
         <Button title="Connect wallet"/>
       </nav>
     </header>
