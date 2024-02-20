@@ -3,14 +3,14 @@
   background-color: #d7b7ff;
   max-width: max-content;
   height: min-content;
-  color: var(--color-black);
+  color: var(--color-text-minor);
   border-radius: 10px;
   cursor: pointer;
   transition: background .8s;
 }
 
 .button:hover {
-  background-image: linear-gradient(to right top, var(--button-background-color), var(--color-white));
+  background-image: linear-gradient(to right top, var(--color-background-button-primary), var(--color-background-button-secondary));
 }
 
 .button_background_with-image {

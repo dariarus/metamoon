@@ -31,7 +31,7 @@
   font-weight: 500;
   font-size: 1.8vh;
   line-height: 1.2em;
-  color: var(--color-white);
+  color: var(--color-text-main);
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -43,5 +43,5 @@
 
 .navigation__link:active,
 .navigation__link:focus {
-  color: var(--color-header-link-active);
+  color: var(--color-link-header-active);
 }
