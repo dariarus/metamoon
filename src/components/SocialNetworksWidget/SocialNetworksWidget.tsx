@@ -10,7 +10,7 @@ import { Link } from '../Link/Link'
 
 export const SocialNetworksWidget: FC = () => {
   return (
-    <footer className={styles.widget}>
+    <div className={styles.widget}>
       <Link href="/example/change-me" styles={styles.link}>
         <img src={instagramIcon} alt="instagram" className={styles.image}/>
       </Link>
@@ -23,6 +23,6 @@ export const SocialNetworksWidget: FC = () => {
       <Link href="/example/change-me" styles={styles.link}>
         <img src={facebookIcon} alt="facebook" className={styles.image}/>
       </Link>
-    </footer>
+    </div>
   )
 }
