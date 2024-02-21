@@ -1,22 +1,22 @@
 import React, { type FC } from 'react'
 
 import styles from './Header.module.css'
-import logo from '../../images/logo.png'
+import logo from '../../../public/images/logo.png'
 
 import { Button } from '../Button/Button'
 import { Link } from '../Link/Link'
 
 export const Header: FC = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles['header']}>
       <Link href="/" styles={styles['header__logo-image-link']}>
-        <img src={logo} alt="Logo" className={styles.logo}/>
+        <img src={logo} alt="Logo" className={styles['logo']}/>
       </Link>
       <nav className={styles.navigation}>
-        <Link href="/example/change-me" styles={styles.navigation__link}>About us</Link>
-        <Link href="/example/change-me" styles={styles.navigation__link}>Roadmap</Link>
-        <Link href="/example/change-me" styles={styles.navigation__link}>Team</Link>
-        <Link href="/example/change-me" styles={styles.navigation__link}>Community</Link>
+        <Link href="/example/change-me" styles={styles['navigation__link']}>About us</Link>
+        <Link href="/example/change-me" styles={styles['navigation__link']}>Roadmap</Link>
+        <Link href="/example/change-me" styles={styles['navigation__link']}>Team</Link>
+        <Link href="/example/change-me" styles={styles['navigation__link']}>Community</Link>
         <Button title="Connect wallet"/>
       </nav>
     </header>

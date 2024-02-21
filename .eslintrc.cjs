@@ -43,6 +43,10 @@ module.exports = {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/triple-slash-reference": ["error", {
       "types": "always"
-    }]
+    }],
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": ["error", {
+        "allowIndexSignaturePropertyAccess": true
+      }],
   }
 }
