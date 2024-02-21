@@ -4,7 +4,7 @@ import 'reset-css'
 
 import './style.css'
 import './constants.css'
-import './fonts/fonts.css'
+import '../public/fonts/fonts.css'
 
 import App from './App/App'
 
