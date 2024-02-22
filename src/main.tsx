@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import 'normalize.css'
 
-import './style.css'
-import './constants.css'
+import './shared/style.css'
+import './shared/constants.css'
 import '../public/fonts/fonts.css'
 
 import App from './App/App'

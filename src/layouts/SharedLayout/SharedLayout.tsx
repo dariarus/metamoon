@@ -1,7 +1,6 @@
 import React, { type FC, type ReactElement } from 'react'
 
-import { Header } from '../../components/Header/Header'
-import { SocialNetworksWidget } from '../../components/SocialNetworksWidget/SocialNetworksWidget'
+import { Header, SocialNetworksWidget } from '../../shared/components'
 
 interface Props {
   children: ReactElement
