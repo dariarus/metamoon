@@ -3,7 +3,7 @@ import * as classNames from 'classnames'
 
 import styles from './Button.module.css'
 
-interface Props {
+type Props = {
   title: string
   isBackgroundImage?: boolean
 }

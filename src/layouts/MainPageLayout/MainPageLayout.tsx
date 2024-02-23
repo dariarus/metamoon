@@ -4,7 +4,7 @@ import styles from './MainPageLayout.module.css'
 
 import { SharedLayout } from '../SharedLayout/SharedLayout'
 
-interface Props {
+type Props = {
   children: ReactElement
 }
 

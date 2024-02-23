@@ -1,6 +1,6 @@
 import React, { type FC, type ReactElement } from 'react'
 
-interface Props {
+type Props = {
   href: string
   styles: string
   children: string | ReactElement

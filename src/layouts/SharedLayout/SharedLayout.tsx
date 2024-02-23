@@ -2,7 +2,7 @@ import React, { type FC, type ReactElement } from 'react'
 
 import { Header, SocialNetworksWidget } from '../../shared/components'
 
-interface Props {
+type Props = {
   children: ReactElement
 }
 

@@ -48,5 +48,6 @@ module.exports = {
     "@typescript-eslint/dot-notation": ["error", {
         "allowIndexSignaturePropertyAccess": true
       }],
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
   }
 }
