@@ -2,10 +2,10 @@ import React, { type FC } from 'react'
 
 import styles from './SocialNetworksWidget.module.css'
 
-import instagramIcon from '../../../../public/images/instagram-icon.png'
-import telegramIcon from '../../../../public/images/telegram-icon.png'
-import linkedinIcon from '../../../../public/images/linkedin-icon.png'
-import facebookIcon from '../../../../public/images/facebook-icon.png'
+import instagramIcon from '../../../../public/images/instagram-icon.svg'
+import telegramIcon from '../../../../public/images/telegram-icon.svg'
+import linkedinIcon from '../../../../public/images/linkedin-icon.svg'
+import facebookIcon from '../../../../public/images/facebook-icon.svg'
 import { Link } from '../Link/Link'
 
 export const SocialNetworksWidget: FC = () => {

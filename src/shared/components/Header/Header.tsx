@@ -1,7 +1,7 @@
 import React, { type FC } from 'react'
 
 import styles from './Header.module.css'
-import logo from '../../../../public/images/logo.png'
+import logo from '../../../../public/images/logo.svg'
 
 import { Button } from '../Button/Button'
 import { Link } from '../Link/Link'
