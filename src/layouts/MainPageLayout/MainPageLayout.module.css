@@ -8,6 +8,8 @@
 
 .app__content {
   max-width: 1440px;
+  box-sizing: border-box;
+  min-width: 720px;
   margin: 0 auto;
   padding: 0 2%;
   height: 100%;

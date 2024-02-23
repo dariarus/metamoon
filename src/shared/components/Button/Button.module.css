@@ -6,6 +6,7 @@
   max-width: max-content;
   height: min-content;
   color: var(--color-text-minor);
+  white-space: nowrap;
   border-radius: 10px;
   cursor: pointer;
   transition: background .3s;

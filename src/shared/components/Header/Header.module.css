@@ -46,6 +46,7 @@
   line-height: 1.2em;
   color: var(--color-text-main);
   text-transform: uppercase;
+  white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
 }
