@@ -23,6 +23,19 @@
   padding: 0;
   width: 10%;
   height: 10%;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+  opacity: .5;
+}
+
+.link:active,
+.link:focus {
+  outline: none;
 }
 
 .image {
