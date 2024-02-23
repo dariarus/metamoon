@@ -1,16 +1,20 @@
 .button {
   padding: .8em 1.1em;
-  background-color: #d7b7ff;
+  background-image: linear-gradient(to right, var(--color-background-button-primary) 50%, var(--color-background-button-secondary));
+  background-size: 200%;
+  background-position: 0 0;
   max-width: max-content;
   height: min-content;
   color: var(--color-text-minor);
   border-radius: 10px;
   cursor: pointer;
-  transition: background .8s;
+  transition: background .3s;
 }
 
-.button:hover {
-  background-image: linear-gradient(to right top, var(--color-background-button-primary), var(--color-background-button-secondary));
+.button:hover,
+.button:focus {
+  background-image: linear-gradient(to right, var(--color-background-button-primary) 58%, var(--color-background-button-secondary));
+  background-position: 100% 0;
 }
 
 .button_background_with-image {
