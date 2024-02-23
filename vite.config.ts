@@ -5,6 +5,7 @@ import eslint from 'vite-plugin-eslint'
 export default defineConfig({
   plugins: [react(), eslint()],
   root: './src',
+  publicDir: "../public",
   build: {
     rollupOptions: {
       input: '/index.html'
