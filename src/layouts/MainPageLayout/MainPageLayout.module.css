@@ -27,11 +27,11 @@
 }
 
 .app__background-circle {
-  position: fixed;
-  top: 25%;
-  left: 40%;
-  width: 1709px;
-  height: 1726px;
+  position: absolute;
+  top: 25.3%;
+  left: 42.3%;
+  width: 118vmax;
+  aspect-ratio: .988;
   background: radial-gradient(45% 40% at 55% 30%, var(--color-background-moon-light), var(--color-background-moon-dark));
   border-radius: 50%;
 }
