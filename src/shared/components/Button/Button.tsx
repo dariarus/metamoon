@@ -1,5 +1,5 @@
 import React, { type FC } from 'react'
-import * as classNames from 'classnames'
+import * as cn from 'classnames'
 
 import styles from './Button.module.css'
 
@@ -9,7 +9,7 @@ type Props = {
 }
 
 export const Button: FC<Props> = (props) => {
-  const buttonStyles = classNames(styles['button'], {
+  const buttonStyles = cn(styles['button'], {
     [styles['button_background_with-image']]: props.isBackgroundImage,
     [styles['button_background_common']]: !props.isBackgroundImage
   })
