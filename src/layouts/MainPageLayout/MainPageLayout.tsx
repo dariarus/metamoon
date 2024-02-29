@@ -1,8 +1,7 @@
 import React, { type FC, type ReactElement } from 'react'
 
-import styles from './MainPageLayout.module.css'
-
 import { SharedLayout } from '../SharedLayout/SharedLayout'
+import styles from './MainPageLayout.module.css'
 
 type Props = {
   children: ReactElement
