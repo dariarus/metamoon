@@ -4,7 +4,7 @@ import 'normalize.css'
 
 import './shared/style.css'
 import './shared/constants.css'
-import '../public/fonts/fonts.css'
+import './shared/fonts.css'
 
 import App from './App'
 
