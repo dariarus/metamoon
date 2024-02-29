@@ -1,6 +1,6 @@
 import React, { type FC } from 'react'
 
-import { MainPage } from '../pages/MainPage/MainPage'
+import { MainPage } from './pages/MainPage/MainPage'
 
 const App: FC = () => {
   return (

@@ -6,7 +6,7 @@ import './shared/style.css'
 import './shared/constants.css'
 import '../public/fonts/fonts.css'
 
-import App from './App/App'
+import App from './App'
 
 const appElement = document.getElementById('app')
 
