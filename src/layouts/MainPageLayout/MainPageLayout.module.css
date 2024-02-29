@@ -2,14 +2,13 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(var(--color-background-main) 5%, var(--color-background-main-transparent)),
-  linear-gradient(var(--color-background-sky-primary), var(--color-background-sky-secondary) 77%);
+  background: var(--gradient-top);
 }
 
 .app__content {
-  max-width: 1440px;
+  max-width: var(--screen-width-max);
   box-sizing: border-box;
-  min-width: 720px;
+  min-width: var(--screen-width-min);
   margin: 0 auto;
   padding: 0 2%;
   height: 100%;
@@ -21,7 +20,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(var(--color-background-main) 50%, var(--color-background-sky-tertiary));
+  background: var(--gradient-bottom);
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
   overflow: hidden;
 }
@@ -32,7 +31,7 @@
   left: 42.3%;
   width: 118vmax;
   aspect-ratio: .988;
-  background: radial-gradient(45% 40% at 55% 30%, var(--color-background-moon-light), var(--color-background-moon-dark));
+  background: var(--gradient-moon);
   border-radius: 50%;
 }
 

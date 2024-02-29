@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import 'normalize.css'
 
-import './shared/style.css'
-import './shared/constants.css'
-import './shared/fonts.css'
+import './shared/styles/global.css'
+import './shared/styles/constants.css'
+import './shared/styles/fonts.css'
 
 import App from './App'
 

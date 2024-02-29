@@ -1,6 +1,6 @@
 .button {
   padding: .8em 1.1em;
-  background-image: linear-gradient(to right, var(--color-background-button-primary) 50%, var(--color-background-button-secondary));
+  background-image: var(--background-button);
   background-size: 200%;
   background-position: 0 0;
   max-width: max-content;
@@ -14,7 +14,7 @@
 
 .button:hover,
 .button:focus {
-  background-image: linear-gradient(to right, var(--color-background-button-primary) 58%, var(--color-background-button-secondary));
+  background-image: var(--background-button-touched);
   background-position: 100% 0;
 }
 

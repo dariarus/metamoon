@@ -1,5 +1,6 @@
 .content {
   padding: 47px 0 0 145px;
+  min-width: max-content;
 }
 
 .heading,
