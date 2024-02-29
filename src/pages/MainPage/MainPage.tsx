@@ -15,7 +15,7 @@ export const MainPage: FC = () => {
              className={styles['replacing-image']}/>
       </span>taMoon
         </h1>
-        <p className={styles['subheading']}>From the creators of the first  Cardano NFT&minus;marketplace</p>
+        <p className={styles['subheading']}>From the creators of the first  Cardano NFT&#8209;marketplace</p>
         <div className={styles['content__buttons-wrap']}>
           <Button title="Connect wallet"/>
           <Button title="Get whitelisted for airdrop"/>
