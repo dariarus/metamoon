@@ -30,7 +30,7 @@
   top: 25.3%;
   left: 42.3%;
   width: 118vmax;
-  aspect-ratio: .988;
+  aspect-ratio: 0.988;
   background: var(--gradient-moon);
   border-radius: 50%;
 }
@@ -58,15 +58,15 @@
   0% {
     transform: scale(0) rotate(-30deg) translate(-100%, 250%);
   }
-  
+
   10% {
     transform: scale(20%) rotate(-50deg) translate(20%, -20%);
   }
-  
+
   50% {
     transform: translate(100%, -60%);
   }
-  
+
   80% {
     transform: translate(100%, -60%) rotate(360deg);
   }

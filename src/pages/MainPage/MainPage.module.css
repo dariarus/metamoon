@@ -25,14 +25,14 @@
   display: inline-block;
   position: relative;
   color: transparent;
-  width: .60em;
+  width: 0.6em;
 }
 
 .replacing-image {
   position: absolute;
   top: 38%;
   left: -2px;
-  width: .75em;
+  width: 0.75em;
 }
 
 .content__buttons-wrap {

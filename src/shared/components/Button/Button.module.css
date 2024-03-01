@@ -1,5 +1,5 @@
 .button {
-  padding: .8em 1.1em;
+  padding: 0.8em 1.1em;
   background-image: var(--background-button);
   background-size: 200%;
   background-position: 0 0;
@@ -9,7 +9,7 @@
   white-space: nowrap;
   border-radius: 10px;
   cursor: pointer;
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 .button:hover,

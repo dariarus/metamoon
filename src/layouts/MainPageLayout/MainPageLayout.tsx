@@ -1,11 +1,11 @@
-import React, { type FC, type ReactElement } from 'react'
+import React, { type FC, type ReactElement } from 'react';
 
-import { SharedLayout } from '../SharedLayout/SharedLayout'
-import styles from './MainPageLayout.module.css'
+import { SharedLayout } from '../SharedLayout/SharedLayout';
+import styles from './MainPageLayout.module.css';
 
 type Props = {
-  children: ReactElement
-}
+  children: ReactElement;
+};
 
 export const MainPageLayout: FC<Props> = (props) => {
   return (
@@ -14,15 +14,12 @@ export const MainPageLayout: FC<Props> = (props) => {
         <SharedLayout>
           <>
             <div className={styles['app__background-bottom']}>
-              <div className={styles['app__background-circle']}>
-              </div>
+              <div className={styles['app__background-circle']}></div>
             </div>
-            <main className={styles['main']}>
-              {props.children}
-            </main>
+            <main className={styles['main']}>{props.children}</main>
           </>
         </SharedLayout>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,19 +1,19 @@
-import React, { type FC, type ReactElement } from 'react'
+import React, { type FC, type ReactElement } from 'react';
 
-import { Header, SocialNetworksWidget } from '../../shared/components'
+import { Header, SocialNetworksWidget } from '../../shared/components';
 
 type Props = {
-  children: ReactElement
-}
+  children: ReactElement;
+};
 
 export const SharedLayout: FC<Props> = (props) => {
   return (
     <>
-      <Header/>
+      <Header />
       {props.children}
       <footer>
-        <SocialNetworksWidget/>
+        <SocialNetworksWidget />
       </footer>
     </>
-  )
-}
+  );
+};

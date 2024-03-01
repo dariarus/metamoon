@@ -23,13 +23,13 @@
   width: 10%;
   height: 10%;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .link:hover,
 .link:active,
 .link:focus {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .link:active,

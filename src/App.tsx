@@ -1,11 +1,9 @@
-import React, { type FC } from 'react'
+import React, { type FC } from 'react';
 
-import { MainPage } from './pages/MainPage/MainPage'
+import { MainPage } from './pages/MainPage/MainPage';
 
 const App: FC = () => {
-  return (
-    <MainPage/>
-  )
-}
+  return <MainPage />;
+};
 
-export default App
+export default App;

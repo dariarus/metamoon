@@ -1,2 +1,2 @@
-export { MainPageLayout } from './MainPageLayout/MainPageLayout'
-export { SharedLayout } from './SharedLayout/SharedLayout'
+export { MainPageLayout } from './MainPageLayout/MainPageLayout';
+export { SharedLayout } from './SharedLayout/SharedLayout';

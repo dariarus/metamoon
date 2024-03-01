@@ -12,13 +12,13 @@
   line-height: 0;
   text-decoration: none;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .header__logo-image-link:hover,
 .header__logo-image-link:active,
 .header__logo-image-link:focus {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .header__logo-image-link:active,
@@ -57,6 +57,6 @@
 
 .navigation__link:active,
 .navigation__link:focus {
-  color: var(--color-link-header-active);
+  color: var(--color-link-active);
   outline: none;
 }
