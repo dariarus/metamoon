@@ -45,7 +45,7 @@
   background: url(../../../public/images/rocket.svg) center center / 80% no-repeat;
   background-size: cover;
   transform-origin: bottom right;
-  animation: rocketFlight 10s linear infinite;
+  animation: rocket-flight 10s linear infinite;
 }
 
 .main {
@@ -54,22 +54,27 @@
   z-index: 4;
 }
 
-@keyframes rocketFlight {
+@keyframes rocket-flight {
   0% {
     transform: scale(0) rotate(-30deg) translate(-100%, 250%);
   }
+  
   10% {
     transform: scale(20%) rotate(-50deg) translate(20%, -20%);
   }
+  
   50% {
     transform: translate(100%, -60%);
   }
+  
   80% {
     transform: translate(100%, -60%) rotate(360deg);
   }
+
   81% {
     transform: rotate(0) translate(100%, -60%);
   }
+
   100% {
     transform: translate(800%, -150%) rotate(50deg);
   }
