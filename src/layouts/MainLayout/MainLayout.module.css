@@ -1,11 +1,11 @@
-.app {
+.main-layout {
   position: relative;
   width: 100%;
   height: 100vh;
   background: var(--gradient-top);
 }
 
-.app__content {
+.main-layout__content {
   max-width: var(--screen-width-max);
   box-sizing: border-box;
   min-width: var(--screen-width-min);
@@ -14,7 +14,7 @@
   height: 100%;
 }
 
-.app__background-bottom {
+.main-layout__background-bottom {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -25,7 +25,7 @@
   overflow: hidden;
 }
 
-.app__background-circle {
+.main-layout__background-circle {
   position: absolute;
   top: 25.3%;
   left: 42.3%;
@@ -35,7 +35,7 @@
   border-radius: 50%;
 }
 
-.app__background-bottom::after {
+.main-layout__background-bottom::after {
   content: '';
   position: absolute;
   bottom: 5%;

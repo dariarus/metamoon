@@ -1,20 +1,20 @@
 import React, { type FC, type ReactElement } from 'react';
 
 import { SharedLayout } from '../SharedLayout/SharedLayout';
-import styles from './MainPageLayout.module.css';
+import styles from './MainLayout.module.css';
 
 type Props = {
   children: ReactElement;
 };
 
-export const MainPageLayout: FC<Props> = (props) => {
+export const MainLayout: FC<Props> = (props) => {
   return (
-    <div className={styles['app']}>
-      <div className={styles['app__content']}>
+    <div className={styles['main-layout']}>
+      <div className={styles['main-layout__content']}>
         <SharedLayout>
           <>
-            <div className={styles['app__background-bottom']}>
-              <div className={styles['app__background-circle']}></div>
+            <div className={styles['main-layout__background-bottom']}>
+              <div className={styles['main-layout__background-circle']}></div>
             </div>
             <main className={styles['main']}>{props.children}</main>
           </>
