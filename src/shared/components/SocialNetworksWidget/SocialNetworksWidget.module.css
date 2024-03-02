@@ -13,30 +13,6 @@
   transform: translateX(-50%);
 }
 
-.link {
-  /* убрать лишнее пространство у тега <a> */
-  display: inline-block;
-  line-height: 0;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  width: 10%;
-  height: 10%;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.link:hover,
-.link:active,
-.link:focus {
-  opacity: 0.5;
-}
-
-.link:active,
-.link:focus {
-  outline: none;
-}
-
 .image {
   width: 100%;
   height: 100%;

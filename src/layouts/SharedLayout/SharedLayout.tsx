@@ -1,6 +1,6 @@
-import React, { type FC, type PropsWithChildren } from "react";
+import React, { type FC, type PropsWithChildren } from 'react';
 
-import { Header, SocialNetworksWidget } from "../../shared/components";
+import { Header, SocialNetworksWidget } from '../../shared/components';
 
 export const SharedLayout: FC<PropsWithChildren> = ({ children }) => {
   return (

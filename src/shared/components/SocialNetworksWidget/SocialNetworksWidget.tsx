@@ -10,16 +10,16 @@ import styles from './SocialNetworksWidget.module.css';
 export const SocialNetworksWidget: FC = () => {
   return (
     <div className={styles.widget}>
-      <Link href="/example/change-me" styles={styles.link}>
+      <Link href="/example/change-me" modifier="image">
         <img src={instagramIcon} alt="instagram" className={styles.image} />
       </Link>
-      <Link href="/example/change-me" styles={styles.link}>
+      <Link href="/example/change-me" modifier="image">
         <img src={telegramIcon} alt="telegram" className={styles.image} />
       </Link>
-      <Link href="/example/change-me" styles={styles.link}>
+      <Link href="/example/change-me" modifier="image">
         <img src={linkedinIcon} alt="linkedin" className={styles.image} />
       </Link>
-      <Link href="/example/change-me" styles={styles.link}>
+      <Link href="/example/change-me" modifier="image">
         <img src={facebookIcon} alt="facebook" className={styles.image} />
       </Link>
     </div>

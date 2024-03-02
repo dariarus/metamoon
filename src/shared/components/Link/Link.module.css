@@ -1,0 +1,45 @@
+.link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:active,
+.link:focus {
+  outline: none;
+}
+
+.link_text {
+  font-weight: 500;
+  font-size: 1.8vh;
+  line-height: 1.2em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.link_text:hover {
+  text-decoration: underline;
+}
+
+.link_text:active,
+.link_text:focus {
+  color: var(--color-link-active);
+}
+
+.link_image {
+  /* убрать лишнее пространство у тега <a> */
+  display: inline-block;
+  line-height: 0;
+  width: 10%;
+  height: 10%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.link_image:hover,
+.link_image:active,
+.link_image:focus {
+  opacity: 0.5;
+}
