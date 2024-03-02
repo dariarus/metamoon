@@ -8,7 +8,8 @@ import styles from './Header.module.css';
 export const Header: FC = () => {
   return (
     <header className={styles['header']}>
-      <Link href="/" modifier="image">
+      {/* <Link href="/" title="Logo image" modifier="image"> */}
+      <Link href="/" title="Logo image" modifier="logo">
         <img src={logo} alt="Logo" className={styles['logo']} />
       </Link>
       <nav className={styles.navigation}>
