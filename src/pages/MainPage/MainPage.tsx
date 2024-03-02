@@ -2,12 +2,12 @@ import React, { type FC } from 'react';
 
 import logo from '../../../public/images/logo.svg';
 import { Button } from '../../shared/components';
-import { MainPageLayout } from '../../layouts';
+import { MainLayout } from '../../layouts';
 import styles from './MainPage.module.css';
 
 export const MainPage: FC = () => {
   return (
-    <MainPageLayout>
+    <MainLayout>
       <div className={styles['content']}>
         <h1 className={styles['heading']}>
           To the
@@ -24,6 +24,6 @@ export const MainPage: FC = () => {
           <Button title="Get whitelisted for airdrop" />
         </div>
       </div>
-    </MainPageLayout>
+    </MainLayout>
   );
 };

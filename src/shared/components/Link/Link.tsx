@@ -1,4 +1,8 @@
-import React, { type FC, type ReactElement } from 'react';
+import React, {
+  type FC,
+  type PropsWithChildren,
+  type ReactElement,
+} from "react";
 
 type Props = {
   href: string;
@@ -6,10 +10,14 @@ type Props = {
   children: string | ReactElement;
 };
 
-export const Link: FC<Props> = (props) => {
+export const Link: FC<PropsWithChildren<Props>> = ({
+  href,
+  styles,
+  children,
+}) => {
   return (
-    <a href={props.href} target="_blank" rel="noreferrer" className={props.styles}>
-      {props.children}
+    <a href={href} target="_blank" rel="noreferrer" className={styles}>
+      {children}
     </a>
   );
 };

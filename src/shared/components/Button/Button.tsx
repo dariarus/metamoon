@@ -8,11 +8,11 @@ type Props = {
   isBackgroundImage?: boolean;
 };
 
-export const Button: FC<Props> = (props) => {
+export const Button: FC<Props> = ({ title, isBackgroundImage }) => {
   const buttonStyles = cn(styles['button'], {
-    [styles['button_background_with-image']]: props.isBackgroundImage,
-    [styles['button_background_common']]: !props.isBackgroundImage,
+    [styles['button_background_with-image']]: isBackgroundImage,
+    [styles['button_background_common']]: !isBackgroundImage,
   });
 
-  return <button className={buttonStyles}>{props.title}</button>;
+  return <button className={buttonStyles}>{title}</button>;
 };
