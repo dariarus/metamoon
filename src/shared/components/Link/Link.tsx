@@ -1,5 +1,5 @@
 import React, { type FC, type PropsWithChildren } from "react";
-import * as cn from "classnames";
+import cn from "classnames";
 
 import instagramIcon from "../../../../public/images/instagram-icon.svg";
 import telegramIcon from "../../../../public/images/telegram-icon.svg";
