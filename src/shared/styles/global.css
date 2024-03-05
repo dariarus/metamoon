@@ -25,6 +25,7 @@ h6,
 p {
   margin: 0;
   color: var(--color-text-main);
+  min-width: var(--text-width-min);
 }
 
 #app {
