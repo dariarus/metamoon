@@ -41,8 +41,7 @@
   left: 30%;
   width: 180px;
   height: 200px;
-  background: url(../../../public/images/rocket.svg) center center / 80%
-    no-repeat;
+  background: url(/images/rocket.svg) center center / 80% no-repeat;
   background-size: cover;
   transform-origin: bottom right;
   animation: rocket-flight 10s linear infinite;

@@ -1,10 +1,11 @@
 import React, { type FC, type PropsWithChildren } from "react";
 import cn from "classnames";
 
-import instagramIcon from "../../../../public/images/instagram-icon.svg";
-import telegramIcon from "../../../../public/images/telegram-icon.svg";
-import linkedinIcon from "../../../../public/images/linkedin-icon.svg";
-import facebookIcon from "../../../../public/images/facebook-icon.svg";
+import instagramIcon from "/images/instagram-icon.svg";
+import telegramIcon from "/images/telegram-icon.svg";
+import linkedinIcon from "/images/linkedin-icon.svg";
+import facebookIcon from "/images/facebook-icon.svg";
+
 import styles from "./Link.module.css";
 
 type Props = {
