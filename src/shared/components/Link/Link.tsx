@@ -52,7 +52,7 @@ export const Link: FC<PropsWithChildren<Props>> = ({
       rel="noreferrer"
       title={title}
       className={linkClasses}
-      style={{ background: `url(${socialNetworkIcon}) 20% / 100% no-repeat` }}
+      style={{ backgroundImage: `url(${socialNetworkIcon})` }}
     >
       {children}
     </a>

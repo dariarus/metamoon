@@ -1,11 +1,12 @@
 .link {
-  /* width: 100%; */
   min-height: 1.2em;
   margin: 0;
   padding: 0;
   text-decoration: none;
   cursor: pointer;
-  background-size: cover;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .link:active,
