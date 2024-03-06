@@ -11,7 +11,6 @@ type Props = {
 export const Button: FC<Props> = ({ title, isBackgroundImage }) => {
   const buttonClasses = cn(styles["button"], {
     [styles["button_background_with-image"]]: isBackgroundImage,
-    [styles["button_background_common"]]: !isBackgroundImage,
   });
 
   return <button className={buttonClasses}>{title}</button>;

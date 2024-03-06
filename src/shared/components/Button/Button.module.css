@@ -5,6 +5,10 @@
   background-position: 0 0;
   width: 100%;
   height: min-content;
+  font-weight: 600;
+  font-size: 1.8vh;
+  line-height: 1.2em;
+  text-transform: uppercase;
   color: var(--color-text-minor);
   text-align: center;
   border-radius: 10px;
@@ -14,7 +18,7 @@
 
 .button:hover,
 .button:focus {
-  background-image: var(--background-button-touched);
+  background-image: var(--background-button-gradient);
   background-position: 100% 0;
 }
 
@@ -22,11 +26,4 @@
   font-weight: 400;
   font-size: 1.3em;
   line-height: 140%;
-}
-
-.button_background_common {
-  font-weight: 600;
-  font-size: 1.8vh;
-  line-height: 1.2em;
-  text-transform: uppercase;
 }

@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
   padding: 5px 2em;
   min-width: 27.8vw;
   background-color: var(--color-widget-background);

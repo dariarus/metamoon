@@ -1,6 +1,8 @@
 :root {
   font-family: Montserrat, Arial, sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
   font-synthesis: none;
   text-rendering: optimizelegibility;
@@ -10,9 +12,6 @@
 }
 
 body {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: max-content;
   min-height: 100vh;
 }
 
@@ -29,11 +28,9 @@ p {
 }
 
 #app {
-  margin: 0;
   min-height: 100%;
 }
 
 button {
   all: unset;
-  box-sizing: border-box;
 }
