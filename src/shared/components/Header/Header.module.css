@@ -8,25 +8,6 @@
   z-index: 4;
 }
 
-.header__logo-image-link {
-  display: inline-block;
-  line-height: 0;
-  text-decoration: none;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.header__logo-image-link:hover,
-.header__logo-image-link:active,
-.header__logo-image-link:focus {
-  opacity: 0.5;
-}
-
-.header__logo-image-link:active,
-.header__logo-image-link:focus {
-  outline: none;
-}
-
 .logo {
   width: 6em;
   object-fit: cover;

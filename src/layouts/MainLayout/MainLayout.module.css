@@ -34,7 +34,7 @@
 }
 
 .main-layout__background-bottom::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 5%;
   left: 30%;

@@ -49,10 +49,12 @@ module.exports = {
       },
     ],
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-    'import/no-absolute-path': ['error', {
-      esmodule: false,
-    }]
-
+    'import/no-absolute-path': [
+      'error',
+      {
+        esmodule: false,
+      },
+    ],
   },
   ignorePatterns: ['dist/'],
 };

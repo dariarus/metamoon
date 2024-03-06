@@ -12,7 +12,7 @@ export const Header: FC = () => {
       <Link href="/" title="Logo image" modifier="logo">
         <img src={logo} alt="Logo" className={styles["logo"]} />
       </Link>
-      <nav className={styles.navigation}>
+      <nav className={styles["navigation"]}>
         <Link href="/example/change-me" modifier="text">
           About us
         </Link>

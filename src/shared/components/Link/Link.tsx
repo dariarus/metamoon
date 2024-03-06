@@ -1,46 +1,40 @@
-import React, { type FC, type PropsWithChildren } from "react";
-import cn from "classnames";
+import React, { type FC, type PropsWithChildren } from 'react';
+import cn from 'classnames';
 
-import instagramIcon from "/images/instagram-icon.svg";
-import telegramIcon from "/images/telegram-icon.svg";
-import linkedinIcon from "/images/linkedin-icon.svg";
-import facebookIcon from "/images/facebook-icon.svg";
+import instagramIcon from '/images/instagram-icon.svg';
+import telegramIcon from '/images/telegram-icon.svg';
+import linkedinIcon from '/images/linkedin-icon.svg';
+import facebookIcon from '/images/facebook-icon.svg';
 
-import styles from "./Link.module.css";
+import styles from './Link.module.css';
 
 type Props = {
   href: string;
-  modifier?: "text" | "image" | "logo";
-  socialNetwork?: "instagram" | "telegram" | "linkedin" | "facebook";
+  modifier?: 'text' | 'image' | 'logo';
+  socialNetwork?: 'instagram' | 'telegram' | 'linkedin' | 'facebook';
   title?: string;
 };
 
-export const Link: FC<PropsWithChildren<Props>> = ({
-  href,
-  modifier,
-  children,
-  socialNetwork,
-  title,
-}) => {
-  const linkClasses = cn(styles["link"], {
-    [styles["link_text"]]: modifier === "text",
-    [styles["link_image"]]: modifier === "image",
-    [styles["link_logo"]]: modifier === "logo",
+export const Link: FC<PropsWithChildren<Props>> = ({ href, modifier, children, socialNetwork, title }) => {
+  const linkClasses = cn(styles['link'], {
+    [styles['link_text']]: modifier === 'text',
+    [styles['link_image']]: modifier === 'image',
+    [styles['link_logo']]: modifier === 'logo',
   });
 
   let socialNetworkIcon;
 
   switch (socialNetwork) {
-    case "instagram":
+    case 'instagram':
       socialNetworkIcon = instagramIcon;
       break;
-    case "telegram":
+    case 'telegram':
       socialNetworkIcon = telegramIcon;
       break;
-    case "linkedin":
+    case 'linkedin':
       socialNetworkIcon = linkedinIcon;
       break;
-    case "facebook":
+    case 'facebook':
       socialNetworkIcon = facebookIcon;
       break;
   }
