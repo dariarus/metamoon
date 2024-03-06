@@ -3,10 +3,10 @@
   background-image: var(--background-button);
   background-size: 200%;
   background-position: 0 0;
-  max-width: max-content;
+  width: 100%;
   height: min-content;
   color: var(--color-text-minor);
-  white-space: nowrap;
+  text-align: center;
   border-radius: 10px;
   cursor: pointer;
   transition: background-position 0.3s;

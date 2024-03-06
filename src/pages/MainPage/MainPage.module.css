@@ -38,4 +38,6 @@
 .content__buttons-wrap {
   display: flex;
   gap: 20px;
+  max-width: max-content;
+  white-space: nowrap;
 }

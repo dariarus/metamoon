@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 17px 35px 0 15px;
+  white-space: nowrap;
   z-index: 4;
 }
 
