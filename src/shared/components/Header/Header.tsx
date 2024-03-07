@@ -1,18 +1,18 @@
-import React, { type FC } from "react";
+import React, { type FC } from 'react';
 
-import logo from "/images/logo.svg";
+import logo from '/images/logo.svg';
 
-import { Button } from "../Button/Button";
-import { Link } from "../Link/Link";
-import styles from "./Header.module.css";
+import { Button } from '../Button/Button';
+import { Link } from '../Link/Link';
+import styles from './Header.module.css';
 
 export const Header: FC = () => {
   return (
-    <header className={styles["header"]}>
+    <header className={styles['header']}>
       <Link href="/" title="Logo image" modifier="logo">
-        <img src={logo} alt="Logo" className={styles["logo"]} />
+        <img src={logo} alt="Logo" className={styles['logo']} />
       </Link>
-      <nav className={styles["navigation"]}>
+      <nav className={styles['navigation']}>
         <Link href="/example/change-me" modifier="text">
           About us
         </Link>

@@ -4,9 +4,11 @@
   padding: 0;
   text-decoration: none;
   cursor: pointer;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  font-weight: 500;
+  font-size: 1.8vh;
+  line-height: 1.2em;
+  color: var(--color-text-main);
+  text-transform: uppercase;
 }
 
 .link:active,
@@ -33,20 +35,9 @@
 
 .link_image,
 .link_logo {
-  /* убрать лишнее пространство у тега <a> */
-  display: inline-block;
-  line-height: 0;
+  display: block;
   opacity: 1;
   transition: opacity 0.3s;
-}
-
-.link_image {
-  width: 4.4vh;
-  height: 4.4vh;
-}
-
-.link_logo {
-  height: 100%;
 }
 
 .link_image:hover,
