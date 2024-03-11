@@ -22,6 +22,22 @@
   background-repeat: no-repeat;
 }
 
+.widget__icon_instagram {
+  background-image: url(/images/instagram-icon.png);
+}
+
+.widget__icon_telegram {
+  background-image: url(/images/telegram-icon.png);
+}
+
+.widget__icon_linkedin {
+  background-image: url(/images/linkedin-icon.png);
+}
+
+.widget__icon_facebook {
+  background-image: url(/images/facebook-icon.png);
+}
+
 @media screen and (width <= 1440px) {
   .widget__icon {
     width: 45px;
