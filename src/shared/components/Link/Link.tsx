@@ -1,32 +1,25 @@
-import React, { type FC, type ReactNode } from "react";
-import cn from "classnames";
+import React, { type FC, type ReactNode } from 'react';
+import cn from 'classnames';
 
-import styles from "./Link.module.css";
+import styles from './Link.module.css';
 
 type Props = {
   href: string;
-  children: string | ReactNode;
-  modifier?: "text" | "image" | "logo";
+  children: ReactNode;
+  isTransparentHover?: boolean;
+  isLogo?: boolean;
   title?: string;
 };
 
-export const Link: FC<Props> = ({ href, modifier, children, title }) => {
-  const linkClasses = cn(styles["link"], {
-    [styles["link_text"]]: modifier === "text",
-    [styles["link_image"]]: modifier === "image",
-    [styles["link_logo"]]: modifier === "logo",
+export const Link: FC<Props> = ({ href, isTransparentHover, children, isLogo, title }) => {
+  const linkClasses = cn(styles['link'], {
+    [styles['link_transparent-hover']]: isTransparentHover ?? isLogo,
   });
 
-  return modifier === "logo" ? (
+  return isLogo ? (
     <span className={linkClasses}>{children}</span>
   ) : (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      title={title}
-      className={linkClasses}
-    >
+    <a href={href} target="_blank" rel="noreferrer" title={title} className={linkClasses}>
       {children}
     </a>
   );

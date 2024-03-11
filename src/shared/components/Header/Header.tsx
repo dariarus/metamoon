@@ -9,22 +9,14 @@ import styles from './Header.module.css';
 export const Header: FC = () => {
   return (
     <header className={styles['header']}>
-      <Link href="/" title="Logo image" modifier="logo">
+      <Link href="/" title="Logo image" isLogo isTransparentHover>
         <img src={logo} alt="Logo" className={styles['logo']} />
       </Link>
       <nav className={styles['navigation']}>
-        <Link href="/example/change-me" modifier="text">
-          About us
-        </Link>
-        <Link href="/example/change-me" modifier="text">
-          Roadmap
-        </Link>
-        <Link href="/example/change-me" modifier="text">
-          Team
-        </Link>
-        <Link href="/example/change-me" modifier="text">
-          Community
-        </Link>
+        <Link href="/example/change-me">About us</Link>
+        <Link href="/example/change-me">Roadmap</Link>
+        <Link href="/example/change-me">Team</Link>
+        <Link href="/example/change-me">Community</Link>
         <Button title="Connect wallet" />
       </nav>
     </header>
