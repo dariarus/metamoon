@@ -36,6 +36,11 @@ const App: FunctionComponent = () => {
           <Routes>
             {/*<Route path="/" element={<MainPage/>}/>*/}
             {/*<Route path="/airdrop" element={<AirdropPage/>}/>*/}
+            {/*<Route path="/" element={*/}
+            {/*  <UserFeatures>*/}
+            {/*    <AirdropProfile isUserActive={true}/>*/}
+            {/*  </UserFeatures>*/}
+            {/*}/>*/}
             <Route path="/" element={
               <UserFeatures>
                 <AirdropProfile isUserActive={true}/>
