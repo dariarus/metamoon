@@ -1,6 +1,6 @@
 import React, {FunctionComponent, ReactElement} from 'react';
 
-import airdropPageStyles from './UserFeatures.module.css';
+import styles from './UserFeatures.module.css';
 
 import {ProgressBar} from '../../components/progress-bar/progress-bar';
 import {AccountNavigation} from '../../components/account-navigation/account-navigation';
@@ -11,12 +11,12 @@ type TUserFeatures = {
 
 export const UserFeatures: FunctionComponent<TUserFeatures> = (props) => {
   return (
-    <div className={airdropPageStyles.content}>
+    <div className={styles['content']}>
       <ProgressBar/>
-      <div className={airdropPageStyles['content__info-wrap']}>
+      <div className={styles['content__info-wrap']}>
         <AccountNavigation/>
         {props.children}
-        <img src="" alt="Profile avatar" className={airdropPageStyles.image}/>
+        <img src="" alt="Profile avatar" className={styles['image']}/>
       </div>
     </div>
   )

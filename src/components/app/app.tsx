@@ -8,8 +8,9 @@ import {Header} from '../header/header';
 // import {MainPage} from '../../pages/main-page/main-page';
 import {SocialNetworksWidget} from '../social-networks-widget/social-networks-widget';
 import {UserFeatures} from '../../pages/UserFeatures/UserFeatures';
-import {AirdropProfile} from '../AirdropProfile/AirdropProfile';
+// import {AirdropProfile} from '../AirdropProfile/AirdropProfile';
 import {ScrollingText} from '../ScrollingText/ScrollingText';
+import {PrivatePresaleProfile} from '../PrivatePresaleProfile/PrivatePresaleProfile';
 
 
 // import rocket from '../../images/rocket.png';
@@ -21,17 +22,6 @@ const App: FunctionComponent = () => {
     <div className={`${appStyles.app} ${appStyles['app_background_basic']}`}>
       <div className={appStyles.app__content}>
         <Header/>
-
-        {/*TODO: при настройке роутинга проверять страницу и удалить фон, если не главная*/}
-        {/*<div className={appStyles['app__background-bottom']}>*/}
-        {/*  <div className={appStyles['app__background-circle']}>*/}
-        {/*<div className={appStyles.app__rocket}>*/}
-        {/*  <img src={rocket} style={{width: "100%"}}/>*/}
-        {/*</div>*/}
-        {/*</div>*/}
-        {/*</div>*/}
-
-
         <main className={appStyles.main}>
           <Routes>
             {/*<Route path="/" element={<MainPage/>}/>*/}
@@ -43,7 +33,7 @@ const App: FunctionComponent = () => {
             {/*}/>*/}
             <Route path="/" element={
               <UserFeatures>
-                <AirdropProfile isUserActive={true}/>
+                <PrivatePresaleProfile privateSalesStatus="available"/>
               </UserFeatures>
             }/>
           </Routes>

@@ -10,7 +10,6 @@ type TAirdropProfileProps = {
 export const AirdropProfile: FunctionComponent<TAirdropProfileProps> = (props) => {
   return (
     <div className={styles.content}>
-
         <h3 className={styles.heading}>{props.isUserActive
           ? "Congratulations!"
           : "You’re not whitelisted yet :("}</h3>
@@ -21,7 +20,6 @@ export const AirdropProfile: FunctionComponent<TAirdropProfileProps> = (props) =
           ? "Claim NFT"
           : "Get whitelisted"}
                 isWithBackground={false}/>
-
     </div>
   )
 }

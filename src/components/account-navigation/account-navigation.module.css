@@ -1,13 +1,15 @@
 .navigation {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   gap: 0.9em;
+  max-height: 234px;
 }
 
 .navigation__link-wrap {
   display: flex;
   width: max-content;
-  min-height: 28%;
+  min-height: 6.5vh;
 }
 
 .link {
