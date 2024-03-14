@@ -9,7 +9,7 @@ import styles from './Header.module.css';
 export const Header: FC = () => {
   return (
     <header className={styles['header']}>
-      <Link href="/" title="Logo image" isLogo isTransparentHover>
+      <Link href="/" title="Logo image" isInnerLink isTransparentHover>
         <img src={logo} alt="Logo" className={styles['logo']} />
       </Link>
       <nav className={styles['navigation']}>

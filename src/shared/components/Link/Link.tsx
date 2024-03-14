@@ -7,16 +7,22 @@ type Props = {
   href: string;
   children: ReactNode;
   isTransparentHover?: boolean;
-  isLogo?: boolean;
+  isInnerLink?: boolean;
   title?: string;
 };
 
-export const Link: FC<Props> = ({ href, isTransparentHover, children, isLogo, title }) => {
+export const Link: FC<Props> = ({
+  href,
+  children,
+  isTransparentHover = false,
+  isInnerLink = false,
+  title = undefined,
+}) => {
   const linkClasses = cn(styles['link'], {
-    [styles['link_transparent-hover']]: isTransparentHover ?? isLogo,
+    [styles['link_transparent-hover']]: isTransparentHover,
   });
 
-  return isLogo ? (
+  return isInnerLink ? (
     <span className={linkClasses}>{children}</span>
   ) : (
     <a href={href} target="_blank" rel="noreferrer" title={title} className={linkClasses}>
