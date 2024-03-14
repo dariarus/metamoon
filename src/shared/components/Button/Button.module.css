@@ -1,6 +1,6 @@
 .button {
   padding: 0.8em 1.1em;
-  background-image: var(--background-button);
+  background-image: var(--background-button-gradient);
   background-size: 200%;
   background-position: 0 0;
   width: 100%;
@@ -18,7 +18,6 @@
 
 .button:hover,
 .button:focus {
-  background-image: var(--background-button-gradient);
   background-position: 100% 0;
 }
 
