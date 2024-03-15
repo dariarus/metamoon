@@ -6,10 +6,12 @@ import styles from './SharedLayout.module.css';
 
 export const SharedLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className={styles['content']}>
-      <Header />
-      {children}
-      <footer>
+    <div className={styles['shared-layout']}>
+      <div className={styles['shared-layout__content']}>
+        <Header />
+        {children}
+      </div>
+      <footer className={styles['footer']}>
         <SocialNetworksWidget />
       </footer>
     </div>
