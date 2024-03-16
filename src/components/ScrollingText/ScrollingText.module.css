@@ -7,6 +7,12 @@
   box-sizing: content-box;
 }
 
+@media screen and (max-height: 800px) {
+  .tape {
+    bottom: 10%;
+  }
+}
+
 .list-container {
   display: flex;
   min-width: max-content;
@@ -27,9 +33,9 @@
 
 .list {
   display: flex;
-  gap: 97px;
+  gap: 8vw;
   margin: 0;
-  padding: 0 0 0 97px;
+  padding: 0 0 0 8vw;
   min-width: max-content;
   flex-shrink: 0;
   white-space: nowrap;
@@ -40,10 +46,10 @@
   list-style: none;
   display: inline-block;
   margin: 0;
-  padding: .97em 0;
+  padding: 2vh 0;
   font-family: Montserrat, Arial, sans-serif;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 2vh;
   line-height: 1em;
   color: var(--color-white);
   white-space: nowrap;

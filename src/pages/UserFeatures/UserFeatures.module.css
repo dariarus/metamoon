@@ -12,6 +12,12 @@
   min-height: 21.6vh;
 }
 
+@media screen and (max-height: 800px) {
+  .content__info-wrap {
+    margin-top: 10vh;
+  }
+}
+
 .image {
   width: 182px;
   height: 184px;
