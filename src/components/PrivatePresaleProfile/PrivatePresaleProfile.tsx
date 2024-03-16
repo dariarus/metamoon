@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
 
 import styles from './PrivatePresaleProfile.module.css'
-// import {Button} from '../button/button';
 import {StatusRectangle} from '../StatusRectangle/StatusRectangle';
 import {Button} from '../button/button';
+import {NftCount} from '../NftCount/NftCount';
 
 type Props = {
   privateSalesStatus: 'available' | 'soon' | 'finished';
@@ -40,7 +40,9 @@ export const PrivatePresaleProfile: FC<Props> = ({privateSalesStatus}) => {
             <div className={styles['coast-item']}>
               <p className={styles['text']}>Amount of NFT</p>
               <span className={styles['coast-item__decor']}></span>
-              <p className={styles['text']}>2/5</p>
+              <NftCount/>
+              {/*<p className={styles['text']}>2/5</p>*/}
+
             </div>
             <div className={styles['coast-item']}>
               <p className={styles['text']}>Total coast</p>
