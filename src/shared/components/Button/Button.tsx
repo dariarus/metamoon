@@ -1,7 +1,7 @@
-import React, { type FC } from "react";
-import cn from "classnames";
+import React, { type FC } from 'react';
+import cn from 'classnames';
 
-import styles from "./Button.module.css";
+import styles from './Button.module.css';
 
 type Props = {
   title: string;
@@ -9,8 +9,8 @@ type Props = {
 };
 
 export const Button: FC<Props> = ({ title, isBackgroundImage = false }) => {
-  const buttonClasses = cn(styles["button"], {
-    [styles["button_background_with-image"]]: isBackgroundImage,
+  const buttonClasses = cn(styles['button'], {
+    [styles['button_background_with-image']]: isBackgroundImage,
   });
 
   return <button className={buttonClasses}>{title}</button>;

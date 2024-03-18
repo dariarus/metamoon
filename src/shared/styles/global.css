@@ -10,12 +10,12 @@
   text-size-adjust: 100%;
 }
 
-body {
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
 }
 
-div {
-  box-sizing: border-box;
+body {
+  min-height: 100vh;
 }
 
 h1,
