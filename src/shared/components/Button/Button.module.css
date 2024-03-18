@@ -1,0 +1,28 @@
+.button {
+  padding: 0.8em 1.1em;
+  background-image: var(--background-button-gradient);
+  background-size: 200%;
+  background-position: 0 0;
+  width: 100%;
+  height: min-content;
+  font-weight: 600;
+  font-size: 1.8vh;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: var(--color-text-minor);
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-position 0.3s;
+}
+
+.button:hover,
+.button:focus {
+  background-position: 100% 0;
+}
+
+.button_background_with-image {
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 140%;
+}

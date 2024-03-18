@@ -1,0 +1,32 @@
+.link {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.8vh;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+}
+
+.link:active,
+.link:focus {
+  outline: none;
+  color: var(--color-link-active);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link_transparent-hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.link_transparent-hover:hover,
+.link_transparent-hover:active,
+.link_transparent-hover:focus {
+  opacity: 0.5;
+}

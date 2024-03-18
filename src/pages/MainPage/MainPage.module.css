@@ -1,0 +1,42 @@
+.content {
+  padding: 47px 0 0 145px;
+}
+
+.heading,
+.subheading {
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.heading {
+  max-width: 40vw;
+  font-size: 9.7vh;
+}
+
+.subheading {
+  margin: 2.3% 0;
+  min-width: 400px;
+  width: 25vw;
+  font-size: 2.3vh;
+}
+
+.replaced-letter {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  width: 0.6em;
+}
+
+.replacing-image {
+  position: absolute;
+  top: 38%;
+  left: -2px;
+  width: 0.75em;
+}
+
+.content__buttons-wrap {
+  display: flex;
+  gap: 20px;
+  max-width: max-content;
+  white-space: nowrap;
+}

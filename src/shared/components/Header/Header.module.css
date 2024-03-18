@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 35px 0 15px;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.logo {
+  width: 6em;
+  object-fit: cover;
+  object-position: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: min-content;
+}
