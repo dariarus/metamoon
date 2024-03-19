@@ -28,22 +28,30 @@ export const PrivatePresaleProfile: FC<Props> = ({privateSalesStatus}) => {
           <div className={styles['coast-item']}>
             <p className={styles['text']}>Your balance</p>
             <span className={styles['coast-item__decor']}></span>
-            <p className={styles['text']}>1 ETH ($1700)</p>
+            <div className={styles['coast-item__vertical-alignment-wrap']}>
+              <p className={styles['text']}>1 ETH ($1700)</p>
+            </div>
           </div>
           <div className={styles['coast-item']}>
             <p className={styles['text']}>Presale Price</p>
             <span className={styles['coast-item__decor']}></span>
-            <p className={styles['text']}>0.2 ETH ($340)</p>
+            <div className={styles['coast-item__vertical-alignment-wrap']}>
+              <p className={styles['text']}>0.2 ETH ($340)</p>
+            </div>
           </div>
           <div className={styles['coast-item']}>
             <p className={styles['text']}>Amount of NFT</p>
             <span className={styles['coast-item__decor']}></span>
-            <NftCount/>
+            <div className={styles['coast-item__vertical-alignment-wrap']}>
+              <NftCount/>
+            </div>
           </div>
           <div className={styles['coast-item']}>
             <p className={styles['text']}>Total coast</p>
             <span className={styles['coast-item__decor']}></span>
-            <p className={styles['text']}>0.2 ETH ($340)</p>
+            <div className={styles['coast-item__vertical-alignment-wrap']}>
+              <p className={styles['text']}>0.2 ETH ($340)</p>
+            </div>
           </div>
         </div>
         <div className={styles['button-wrap']}>
@@ -61,7 +69,9 @@ export const PrivatePresaleProfile: FC<Props> = ({privateSalesStatus}) => {
           <div className={styles['coast-item']}>
             <p className={styles['text']}>Presale price</p>
             <span className={styles['coast-item__decor']}></span>
-            <p className={styles['text']}>0.1 ETH ($170)</p>
+            <div className={styles['coast-item__vertical-alignment-wrap']}>
+              <p className={styles['text']}>0.1 ETH ($170)</p>
+            </div>
           </div>
         </div>
         : <div className={styles['content']}>
