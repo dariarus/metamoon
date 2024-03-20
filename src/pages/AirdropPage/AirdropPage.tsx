@@ -2,13 +2,13 @@ import React, { type FC } from 'react';
 
 import { Button } from 'shared/components';
 
-import styles from './AirdropProfile.module.css';
+import styles from './AirdropPage.module.css';
 
 type Props = {
   isUserActive: boolean;
 };
 
-export const AirdropProfile: FC<Props> = ({ isUserActive }) => {
+export const AirdropPage: FC<Props> = ({ isUserActive }) => {
   return (
     <div className={styles['content']}>
       <h3 className={styles['heading']}>{isUserActive ? 'Congratulations!' : 'You’re not whitelisted yet :('}</h3>

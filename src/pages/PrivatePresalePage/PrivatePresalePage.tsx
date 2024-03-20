@@ -1,6 +1,6 @@
 import React, { type FC } from 'react';
 
-import styles from './PrivatePresaleProfile.module.css';
+import styles from './PrivatePresalePage.module.css';
 import { StatusRectangle } from '../../shared/components/StatusRectangle/StatusRectangle';
 import { Button } from '../../shared/components/Button/Button';
 import { NftCount } from '../../shared/components/NftCount/NftCount';
@@ -9,7 +9,7 @@ type Props = {
   privateSalesStatus: 'available' | 'soon' | 'finished';
 };
 
-export const PrivatePresaleProfile: FC<Props> = ({ privateSalesStatus }) => {
+export const PrivatePresalePage: FC<Props> = ({ privateSalesStatus }) => {
   return privateSalesStatus === 'available' ? (
     <div className={`${styles['content']} ${styles['content_sales-available']}`}>
       <div className={styles['heading-wrap']}>
