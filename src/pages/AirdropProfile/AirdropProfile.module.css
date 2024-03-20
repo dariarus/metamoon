@@ -1,0 +1,23 @@
+.content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: end;
+  gap: 0.9em;
+  max-width: 50%;
+}
+
+.heading,
+.text {
+  line-height: 1.2em;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 3.2vh;
+}
+
+.text {
+  max-width: 408px;
+  font-weight: 500;
+  font-size: 1.8vh;
+}

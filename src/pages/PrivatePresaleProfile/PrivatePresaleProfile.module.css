@@ -1,0 +1,85 @@
+.content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: end;
+  gap: 0.9em;
+  min-width: 30%;
+}
+
+.content_sales-available {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+}
+
+.heading-wrap,
+.text-wrap {
+  min-height: 6.5vh;
+}
+
+.text-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+.heading-wrap {
+  display: flex;
+}
+
+.heading,
+.text {
+  min-width: 0;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.heading {
+  font-size: 3.2vh;
+}
+
+.heading_sales-available {
+  align-self: flex-end;
+}
+
+.text {
+  flex: 1 0 auto;
+  max-width: 408px;
+  font-size: 1.8vh;
+}
+
+.coast-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.coast-item {
+  display: flex;
+  align-items: baseline;
+}
+
+/* .coast-item__grid { */
+
+/*  display: grid; */
+
+/*  grid-template-columns: max-content 100%; */
+
+/* } */
+
+.coast-item__decor {
+  flex: 0 1 auto;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  line-height: 1px;
+  background-color: var(--color-text-main);
+}
+
+.coast-item__vertical-alignment-wrap {
+  flex: 1 0 30%;
+}
+
+.button-wrap {
+  padding-top: 1em;
+}

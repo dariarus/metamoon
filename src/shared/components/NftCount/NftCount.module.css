@@ -1,0 +1,44 @@
+.count {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.button {
+  width: 15px;
+  height: 1em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+.button:focus,
+.button:active {
+  opacity: 0.8;
+}
+
+.button:hover,
+.button:disabled {
+  opacity: 0.5;
+}
+
+.button_increase {
+  background-image: url(images/increase-arrow.png);
+}
+
+.button_decrease {
+  background-image: url(images/decrease-arrow.png);
+}
+
+.count__text {
+  min-width: 0;
+  font-weight: 500;
+  font-size: 1.8vh;
+  line-height: 1.2em;
+}

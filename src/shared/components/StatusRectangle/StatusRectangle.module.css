@@ -1,0 +1,17 @@
+.rectangle {
+  align-self: flex-start;
+  box-sizing: border-box;
+  padding: 5px 2em;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.5vh;
+  color: var(--color-text-main);
+}
+
+.rectangle_status_active {
+  border: 1px solid var(--color-status-active);
+}
+
+.rectangle_status_pending {
+  border: 1px solid var(--color-status-pending);
+}
