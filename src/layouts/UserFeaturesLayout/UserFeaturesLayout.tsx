@@ -11,13 +11,11 @@ export const UserFeaturesLayout: FC<PropsWithChildren> = ({ children }) => {
       <div className={styles['users-features-layout__content']}>
         <SharedLayout>
           <main className={styles['main']}>
-            <div className={styles.content}>
-              <ProgressBar />
-              <div className={styles['main__info-wrap']}>
-                <AccountNavigation />
-                {children}
-                <img src="example/change-me" alt="Profile avatar" className={styles['image']} />
-              </div>
+            <ProgressBar />
+            <div className={styles['main__info-wrap']}>
+              <AccountNavigation />
+              {children}
+              <img src="example/change-me" alt="Profile avatar" className={styles['image']} />
             </div>
           </main>
         </SharedLayout>

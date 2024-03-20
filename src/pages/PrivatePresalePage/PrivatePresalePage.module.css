@@ -13,6 +13,13 @@
   align-items: initial;
 }
 
+@media screen and (width <= 1380px) {
+  .content,
+  .content_sales-available {
+    min-width: 50%;
+  }
+}
+
 .heading-wrap,
 .text-wrap {
   min-height: 6.5vh;

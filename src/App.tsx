@@ -2,19 +2,25 @@ import React, { type FC } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import { UserFeaturesLayout } from "layouts";
-import { PrivatePresalePage } from "pages";
-// import { AirdropPage } from "./pages/AirdropPage/AirdropPage";
-// import { MainPage } from "./pages/MainPage/MainPage";
+import { AirdropPage, MainPage, PrivatePresalePage } from "pages";
 
 const App: FC = () => {
   return (
     <Routes>
-      {/* <Route path="/" element={<MainPage />} /> */}
+      <Route path="/" element={<MainPage />} />
       <Route
-        path="/"
+        path="airdrop"
         element={
           <UserFeaturesLayout>
-            <PrivatePresalePage privateSalesStatus="soon" />
+            <AirdropPage isUserActive={false} />
+          </UserFeaturesLayout>
+        }
+      />
+      <Route
+        path="private-presale"
+        element={
+          <UserFeaturesLayout>
+            <PrivatePresalePage privateSalesStatus="available" />
           </UserFeaturesLayout>
         }
       />
