@@ -1,30 +1,22 @@
 import React, { type FC } from "react";
 
-import { StatusRectangle, NftCount, Button } from "shared/components";
+import { NftCount, Button } from "shared/components";
 
-import styles from "./PrivatePresalePage.module.css";
+import styles from "./PublicSalePage.module.css";
 
 type Props = {
-  privatePresaleStatus: "available" | "soon" | "finished";
+  publicSaleStatus: "available" | "soon" | "finished";
 };
 
-export const PrivatePresalePage: FC<Props> = ({ privatePresaleStatus }) => {
-  return privatePresaleStatus === "available" ? (
+export const PublicSalePage: FC<Props> = ({ publicSaleStatus }) => {
+  return publicSaleStatus === "available" ? (
     <div
       className={`${styles["content"]} ${styles["content_sales-available"]}`}
     >
-      <div className={styles["heading-wrap"]}>
-        <h3
-          className={`${styles["heading"]} ${styles["heading_sales-available"]}`}
-        >
-          Be an early bird!
-        </h3>
-        <StatusRectangle title="5d 13h 12min 43sec" status="active" />
-      </div>
+      <h3 className={styles["heading"]}>Mint NFTs now!</h3>
       <div className={styles["text-wrap"]}>
         <p className={`${styles["text"]}`}>
-          Choose the amount of tokens you want to buy and make a payment in any
-          token.
+          You can mint an unlimited amount of NFTs for the market price
         </p>
       </div>
       <div className={styles["coast-info"]}>
@@ -61,12 +53,13 @@ export const PrivatePresalePage: FC<Props> = ({ privatePresaleStatus }) => {
         <Button title="Mint 2 NFT" />
       </div>
     </div>
-  ) : privatePresaleStatus === "soon" ? (
+  ) : publicSaleStatus === "soon" ? (
     <div className={styles["content"]}>
-      <h3 className={styles["heading"]}>Private sale starts soon</h3>
+      <h3 className={styles["heading"]}>Subscribe to our news!</h3>
       <div className={styles["text-wrap"]}>
         <p className={`${styles["text"]}`}>
-          You can buy ut to 5 NFTs for the lowest price of 0.1 Eth per NFT
+          We’ll send you a notification when public sale is available to
+          participate
         </p>
       </div>
       <div className={styles["coast-item"]}>
@@ -76,13 +69,13 @@ export const PrivatePresalePage: FC<Props> = ({ privatePresaleStatus }) => {
           <p className={styles["text"]}>0.1 ETH ($170)</p>
         </div>
       </div>
+      <div className={styles["button-wrap"]}>
+        <Button title="Subscribe" />
+      </div>
     </div>
   ) : (
     <div className={styles["content"]}>
-      <h3 className={styles["heading"]}>Private sale is over!</h3>
-      <div className={styles["text-wrap"]}>
-        <p className={`${styles["text"]}`}>You can buy NFTs on public sale.</p>
-      </div>
+      <h3 className={styles["heading"]}>SOLD OUT</h3>
     </div>
   );
 };
