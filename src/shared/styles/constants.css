@@ -6,9 +6,13 @@
   --color-text-main: #fff;
   --color-text-minor: #000;
   --color-widget-background: #d7b7ffb2;
+  --color-tape-background: #000;
   --color-link-active: #ffa300;
+  --color-status-active: #6cff47;
+  --color-status-pending: #9747ff;
   --gradient-top: linear-gradient(#000 5%, #0000), linear-gradient(#fa00ff, #7000ff 77%);
   --gradient-bottom: linear-gradient(#000 50%, #09006d);
   --gradient-moon: radial-gradient(45% 40% at 55% 30%, #fff, #d9d9d900);
+  --gradient-basic: linear-gradient(to right, #000, 60%, #6f00fc);
   --background-button-gradient: linear-gradient(to right, #d7b7ff 58%, #fff);
 }

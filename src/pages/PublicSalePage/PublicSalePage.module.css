@@ -1,0 +1,57 @@
+.content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: end;
+  gap: 0.9em;
+  width: 40%;
+}
+
+.content_sales-available {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  padding-top: 2%;
+}
+
+@media screen and (width <= 1380px) {
+  .content,
+  .content_sales-available {
+    min-width: 50%;
+  }
+}
+
+.heading-wrap,
+.text-wrap {
+  min-height: 6.5vh;
+}
+
+.text-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+.heading-wrap {
+  display: flex;
+}
+
+.heading,
+.text {
+  min-width: 0;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.heading {
+  font-size: 3.2vh;
+}
+
+.text {
+  flex: 1 0 auto;
+  max-width: 408px;
+  font-size: 1.8vh;
+}
+
+.button-wrap {
+  padding-top: 1em;
+}

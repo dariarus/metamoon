@@ -1,0 +1,27 @@
+.navigation {
+  /* align-self: flex-start; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+  max-height: 234px;
+}
+
+.navigation__link-wrap {
+  display: flex;
+  width: max-content;
+  min-height: 6.5vh;
+}
+
+.link {
+  align-self: flex-end;
+  font-weight: 500;
+  font-size: 3vh;
+  color: var(--color-text-main);
+  text-decoration: none;
+}
+
+.link:active,
+.link:focus,
+.link:hover {
+  text-decoration: underline;
+}
