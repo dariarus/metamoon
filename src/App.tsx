@@ -1,13 +1,8 @@
-import React, { type FC } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { type FC } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-import { UserFeaturesLayout } from "layouts";
-import {
-  AirdropPage,
-  MainPage,
-  PrivatePresalePage,
-  PublicSalePage,
-} from "pages";
+import { UserFeaturesLayout } from 'layouts';
+import { AirdropPage, MainPage, PrivatePresalePage, PublicSalePage } from 'pages';
 
 const App: FC = () => {
   return (
@@ -33,7 +28,7 @@ const App: FC = () => {
         path="public-sale"
         element={
           <UserFeaturesLayout>
-            <PublicSalePage publicSaleStatus="available" />
+            <PublicSalePage publicSaleStatus="soon" />
           </UserFeaturesLayout>
         }
       />

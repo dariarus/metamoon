@@ -1,0 +1,32 @@
+.coast-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.coast-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.coast-item__decor {
+  flex: 0 1 auto;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  line-height: 1px;
+  background-color: var(--color-text-main);
+}
+
+.coast-item__vertical-alignment-wrap {
+  flex: 1 0 30%;
+}
+
+.text {
+  min-width: 0;
+  font-weight: 500;
+  line-height: 1.2em;
+  flex: 1 0 auto;
+  max-width: 408px;
+  font-size: 1.8vh;
+}

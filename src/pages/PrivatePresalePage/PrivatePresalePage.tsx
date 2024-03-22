@@ -1,87 +1,43 @@
-import React, { type FC } from "react";
+import React, { type FC } from 'react';
 
-import { StatusRectangle, NftCount, Button } from "shared/components";
+import { Button, NftCoast, StatusRectangle } from 'shared/components';
 
-import styles from "./PrivatePresalePage.module.css";
+import styles from './PrivatePresalePage.module.css';
 
 type Props = {
-  privatePresaleStatus: "available" | "soon" | "finished";
+  privatePresaleStatus: 'available' | 'soon' | 'finished';
 };
 
 export const PrivatePresalePage: FC<Props> = ({ privatePresaleStatus }) => {
-  return privatePresaleStatus === "available" ? (
-    <div
-      className={`${styles["content"]} ${styles["content_sales-available"]}`}
-    >
-      <div className={styles["heading-wrap"]}>
-        <h3
-          className={`${styles["heading"]} ${styles["heading_sales-available"]}`}
-        >
-          Be an early bird!
-        </h3>
+  return privatePresaleStatus === 'available' ? (
+    <div className={`${styles['content']} ${styles['content_sales-available']}`}>
+      <div className={styles['heading-wrap']}>
+        <h3 className={`${styles['heading']} ${styles['heading_sales-available']}`}>Be an early bird!</h3>
         <StatusRectangle title="5d 13h 12min 43sec" status="active" />
       </div>
-      <div className={styles["text-wrap"]}>
-        <p className={`${styles["text"]}`}>
-          Choose the amount of tokens you want to buy and make a payment in any
-          token.
+      <div className={styles['text-wrap']}>
+        <p className={`${styles['text']}`}>
+          Choose the amount of tokens you want to buy and make a payment in any token.
         </p>
       </div>
-      <div className={styles["coast-info"]}>
-        <div className={styles["coast-item"]}>
-          <p className={styles["text"]}>Your balance</p>
-          <span className={styles["coast-item__decor"]}></span>
-          <div className={styles["coast-item__vertical-alignment-wrap"]}>
-            <p className={styles["text"]}>1 ETH ($1700)</p>
-          </div>
-        </div>
-        <div className={styles["coast-item"]}>
-          <p className={styles["text"]}>Presale Price</p>
-          <span className={styles["coast-item__decor"]}></span>
-          <div className={styles["coast-item__vertical-alignment-wrap"]}>
-            <p className={styles["text"]}>0.2 ETH ($340)</p>
-          </div>
-        </div>
-        <div className={styles["coast-item"]}>
-          <p className={styles["text"]}>Amount of NFT</p>
-          <span className={styles["coast-item__decor"]}></span>
-          <div className={styles["coast-item__vertical-alignment-wrap"]}>
-            <NftCount />
-          </div>
-        </div>
-        <div className={styles["coast-item"]}>
-          <p className={styles["text"]}>Total coast</p>
-          <span className={styles["coast-item__decor"]}></span>
-          <div className={styles["coast-item__vertical-alignment-wrap"]}>
-            <p className={styles["text"]}>0.2 ETH ($340)</p>
-          </div>
-        </div>
-      </div>
-      <div className={styles["button-wrap"]}>
+      <NftCoast infoKind="total" />
+      <div className={styles['button-wrap']}>
         <Button title="Mint 2 NFT" />
       </div>
     </div>
-  ) : privatePresaleStatus === "soon" ? (
-    <div className={styles["content"]}>
-      <h3 className={styles["heading"]}>Private sale starts soon</h3>
-      <div className={styles["text-wrap"]}>
-        <p className={`${styles["text"]}`}>
-          You can buy ut to 5 NFTs for the lowest price of 0.1 Eth per NFT
-        </p>
+  ) : privatePresaleStatus === 'soon' ? (
+    <div className={styles['content']}>
+      <h3 className={styles['heading']}>Private sale starts soon</h3>
+      <div className={styles['text-wrap']}>
+        <p className={`${styles['text']}`}>You can buy ut to 5 NFTs for the lowest price of 0.1 Eth per NFT</p>
       </div>
-      <div className={styles["coast-item"]}>
-        <p className={styles["text"]}>Presale price</p>
-        <span className={styles["coast-item__decor"]}></span>
-        <div className={styles["coast-item__vertical-alignment-wrap"]}>
-          <p className={styles["text"]}>0.1 ETH ($170)</p>
-        </div>
-      </div>
+      <NftCoast infoKind="partial" priceKind="presale" />
     </div>
   ) : (
-    <div className={styles["content"]}>
-      <h3 className={styles["heading"]}>Private sale is over!</h3>
-      <div className={styles["text-wrap"]}>
-        <p className={`${styles["text"]}`}>You can buy NFTs on public sale.</p>
+    <div className={styles['content']}>
+      <h3 className={styles['heading']}>Private sale is over!</h3>
+      <div className={styles['text-wrap']}>
+        <p className={`${styles['text']}`}>You can buy NFTs on public sale.</p>
       </div>
     </div>
   );
